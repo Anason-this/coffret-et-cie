@@ -51,6 +51,7 @@ const floatingContacts = [
 function layout({ title, description, path, body, catalogScript = false }) {
   return `<!doctype html><html lang="fr-MA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
   <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v2.css"><script src="/devis-prices.js" defer></script>
@@ -109,6 +110,7 @@ async function save(path, content) {
 }
 
 await mkdir(output, { recursive: true });
+await copyFile(new URL('img/favicon.svg', root), new URL('favicon.svg', output));
 const groups = [null, ...Object.keys(familyNames)];
 for (const family of groups) {
   const items = family ? products.filter(p => p.family === family) : products;
