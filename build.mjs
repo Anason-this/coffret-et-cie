@@ -1,11 +1,16 @@
 import { mkdir, writeFile, copyFile, readFile } from 'node:fs/promises';
 import { card, colorName, escape, familyNames, familyPath, number, pageSize, picture, productPath, stock, swatches } from './cards.mjs';
+import { markedUpPrices, maximumQuantity, minimumQuantity } from './quote-pricing.mjs';
 
 const root = new URL('.', import.meta.url);
 const output = new URL('dist/', root);
 const origin = process.env.CATALOG_ORIGIN ?? 'https://coffret-et-cie-catalogue.sassy-leaf-4417.chatgpt.site';
 const snapshot = JSON.parse(await readFile(new URL('idelo-products.json', root), 'utf8'));
 const products = snapshot.products;
+const quoteConfig = JSON.parse(await readFile(new URL('quote-config.json', root), 'utf8'));
+if (quoteConfig.email && !/^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(quoteConfig.email)) throw new Error('Invalid quote email');
+if (quoteConfig.whatsapp && !/^\+?[1-9]\d{7,14}$/.test(quoteConfig.whatsapp)) throw new Error('Invalid international WhatsApp number');
+const quotePrices = markedUpPrices(quoteConfig.makitoPricesByCatalogSku, products);
 if (!products.length || new Set(products.map(p => p.id)).size !== products.length) throw new Error('Invalid catalog snapshot');
 for (const p of products) {
   if (!/^[a-z0-9-]+$/.test(p.id) || !Object.hasOwn(familyNames, p.family)
@@ -22,10 +27,11 @@ function layout({ title, description, path, body, catalogScript = false }) {
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full.css">${catalogScript ? '<script src="/catalogue-indexed.js" type="module"></script>' : ''}</head>
+  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v1.css"><script src="/devis-v1.js" defer></script>
+  ${catalogScript ? '<script src="/catalogue-indexed.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
-  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form></div>
+  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form><a class="quote-nav" href="/devis/">Mon devis <span data-quote-count hidden>0</span></a></div>
   <nav class="wrap nav" aria-label="Catégories"><a href="/">Catalogue</a>${links}</nav></header>
   <main id="contenu">${body}</main>
   <footer><div class="wrap footer"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Catalogue · Maroc</p></div></footer></body></html>`;
@@ -69,14 +75,55 @@ for (const family of groups) {
 
 for (const p of products) {
   const description = p.specification || p.type;
+  const prices = quotePrices.get(p.sku) ?? null;
+  const initialUnit = prices?.tiers.find(tier => tier.through === null || minimumQuantity <= tier.through)?.unitMinor;
+  const initialLabel = initialUnit === undefined ? 'Prix sur devis' :
+    new Intl.NumberFormat('fr-MA', { style: 'currency', currency: prices.currency }).format(initialUnit / 100) + ' / pièce';
   await save(productPath(p), layout({ title: p.name + ' · ' + p.type, description, path: productPath(p), body: `
     <div class="wrap detail-wrap"><nav aria-label="Fil d’Ariane" class="crumb"><a href="/">Catalogue</a> / <a href="${familyPath(p.family)}">${escape(familyNames[p.family])}</a> / <span>${escape(p.name)}</span></nav>
     <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><p class="eyebrow">${escape(p.sku)}</p><h1>${escape(p.name)}</h1><p>${escape(description)}</p>
     <h2>Coloris</h2>${swatches(p, true)}<h2>Disponibilité indicative</h2>${stock(p)}<p class="demo">${stockNote}</p>
-    <a class="button" href="${familyPath(p.family)}">Voir la collection</a></div></article></div>` }));
+    <section class="quote-product" aria-labelledby="quote-product-title"><h2 id="quote-product-title">Votre quantité</h2>
+      <p class="quote-price" id="quote-unit-price">${escape(initialLabel)}</p>
+      <form id="quote-add" data-item="${escape(JSON.stringify({ id: p.id, sku: p.sku, name: p.name, prices }))}">
+        <label for="quote-quantity">Pièces <small>(min. ${minimumQuantity})</small></label>
+        <input id="quote-quantity" name="quantity" type="number" inputmode="numeric" required min="${minimumQuantity}" max="${maximumQuantity}" step="1" value="${minimumQuantity}">
+        <button type="submit">Ajouter au devis</button>
+      </form>
+      <p id="quote-add-status" class="quote-status" role="status"></p><a id="open-quote" href="/devis/" hidden>Voir mon devis →</a>
+    </section>
+    <a class="collection-back" href="${familyPath(p.family)}">Voir la collection</a></div></article></div>` }));
 }
 
+await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les références et quantités de votre sélection.', path: '/devis/', body: `
+  <section class="intro"><div class="wrap"><p class="eyebrow">COFFRET &amp; CIE</p><h1>Ma demande de devis</h1><p>Vérifiez les références et les quantités avant d’envoyer votre demande.</p></div></section>
+  <div class="wrap quote-page" id="quote-page" data-email="${escape(quoteConfig.email)}" data-whatsapp="${escape(quoteConfig.whatsapp.replace(/^\+/, ''))}">
+    <noscript><p>Activez JavaScript pour préparer votre sélection.</p></noscript>
+    <p id="quote-empty" hidden>Votre sélection est vide. <a href="/">Parcourir le catalogue</a></p>
+    <section id="quote-summary" hidden aria-labelledby="quote-summary-title">
+      <h2 id="quote-summary-title">Votre sélection</h2><ul id="quote-lines" class="quote-lines"></ul>
+      <p class="quote-total"><strong>Total des pièces</strong> <output id="quote-total"></output></p>
+      <p class="quote-total"><strong>Estimation articles</strong> <output id="quote-money"></output></p>
+      <p class="demo">Disponibilité, marquage, livraison et montant définitif à confirmer.</p>
+      <div class="quote-actions">
+        <button type="button" id="quote-print">Imprimer / PDF</button>
+        <button type="button" class="quote-secondary" id="quote-copy">Copier le message</button>
+        <a class="button quote-secondary" id="quote-email" hidden>Envoyer par e-mail</a>
+        <a class="button quote-secondary" id="quote-whatsapp" target="_blank" rel="noopener noreferrer" hidden>Envoyer sur WhatsApp</a>
+      </div>
+      <p id="quote-contact-note" class="demo" hidden></p>
+      <label for="quote-message" class="quote-message-label">Message prêt à envoyer</label>
+      <textarea id="quote-message" rows="8" readonly></textarea>
+    </section>
+    <p id="quote-status" class="quote-status" role="status"></p>
+  </div>` }));
+
 await copyFile(new URL('style.css', root), new URL('catalogue-full.css', output));
+await copyFile(new URL('devis.css', root), new URL('devis-v1.css', output));
+const quoteScript = await readFile(new URL('devis.js', root), 'utf8');
+await writeFile(new URL('devis-v1.js', output), quoteScript
+  .replace('/* minimum */ 50', String(minimumQuantity))
+  .replace('/* maximum */ 1000000', String(maximumQuantity)));
 await copyFile(new URL('cards.mjs', root), new URL('cards-full.js', output));
 const browserScript = await readFile(new URL('catalogue.js', root), 'utf8');
 await writeFile(new URL('catalogue-indexed.js', output), browserScript

@@ -1,0 +1,38 @@
+.quote-nav { flex: none; border: 1px solid #a9ae9c; padding: .6rem .85rem; white-space: nowrap; }
+.quote-nav span { background: var(--terra); color: white; border-radius: 1rem; padding: .12rem .45rem; margin-left: .35rem; }
+.quote-product { margin-block: 1.25rem; padding: 1rem; background: var(--bone); border: 1px solid var(--line); }
+.quote-product h2 { margin-bottom: .45rem; }
+.quote-price { color: var(--olive); font-weight: 700; margin-bottom: .8rem; }
+.quote-product form, .quote-actions, .quote-line-form { display: flex; align-items: end; flex-wrap: wrap; gap: .6rem; }
+.quote-product form label { align-self: center; }
+.quote-product input, .quote-line input, #quote-message { color: var(--ink); border: 1px solid var(--line); background: white; padding: .65rem; }
+.quote-product input, .quote-line input { width: 6.5rem; }
+.quote-status { margin: .6rem 0 0; color: var(--olive); }
+.quote-status:empty { display: none; }
+#open-quote, .collection-back, #quote-empty a { display: inline-block; text-decoration: underline; text-underline-offset: .2em; }
+.quote-page { max-width: 980px; padding-block: 2rem 4rem; }
+.quote-lines { list-style: none; padding: 0; margin: 0 0 1rem; border-top: 1px solid var(--line); }
+.quote-line { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); padding-block: .9rem; }
+.quote-line-name { font-weight: 700; }
+.quote-line-ref { margin: 0; color: var(--muted); font-size: .85rem; }
+.quote-line-form label { display: grid; gap: .2rem; }
+.quote-line-value { display: grid; text-align: right; gap: .25rem; }
+.quote-secondary, .quote-remove { background: var(--bone); color: var(--olive); }
+.quote-remove { padding: .25rem .5rem; justify-self: end; }
+.quote-total { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: .6rem .8rem; margin-bottom: .45rem; background: var(--bone); }
+.quote-message-label { display: block; margin-top: 1.5rem; font-weight: 700; }
+#quote-message { display: block; width: 100%; resize: vertical; font: inherit; margin-top: .4rem; }
+@media (max-width: 620px) {
+  .quote-nav { align-self: flex-start; }
+  .quote-line { grid-template-columns: minmax(0, 1fr) auto; }
+  .quote-line-form { grid-column: 1; grid-row: 2; }
+  .quote-line-value { grid-column: 2; grid-row: 1 / span 2; }
+}
+@media print {
+  header, footer, .skip, .quote-actions, .quote-remove, .quote-line-form button,
+  .quote-message-label, #quote-message, #quote-contact-note, #quote-status { display: none !important; }
+  .quote-page, .intro .wrap { width: 100%; }
+  .intro { padding-block: 10px; }
+  .quote-line { break-inside: avoid; }
+  .quote-line input { border: 0; padding: 0; }
+}
