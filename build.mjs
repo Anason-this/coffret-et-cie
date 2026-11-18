@@ -27,7 +27,7 @@ function layout({ title, description, path, body, catalogScript = false }) {
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v2.css"><script src="/devis-v2.js" defer></script>
+  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><script src="/devis-v2.js" defer></script>
   ${catalogScript ? '<script src="/catalogue-indexed.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
@@ -146,7 +146,9 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
     <p id="quote-status" class="quote-status" role="status"></p>
   </div>` }));
 
-await copyFile(new URL('style.css', root), new URL('catalogue-full.css', output));
+for (const sheet of ['catalogue-full-v2.css', 'catalogue-full.css']) {
+  await copyFile(new URL('style.css', root), new URL(sheet, output));
+}
 await mkdir(new URL('img/', output), { recursive: true });
 await copyFile(new URL('img/novagift-logo.png', root), new URL('img/novagift-logo.png', output));
 await copyFile(new URL('devis.css', root), new URL('devis-v2.css', output));

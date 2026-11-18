@@ -22,6 +22,14 @@ button, .button { border: 0; background: var(--terra); color: white; font-weight
 header { background: var(--olive); color: var(--bone); }
 .mast { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding-block: 21px; }
 .brand { display: flex; align-items: center; gap: 13px; font: 33px/.95 Georgia, serif; white-space: nowrap; }
+.brand:is(:hover, :focus, :active) { text-decoration: none; }
+@media (any-hover: hover) {
+  .brand { transform-origin: left center; }
+  .brand:hover { transform: scale(1.04); }
+}
+@media (any-hover: hover) and (prefers-reduced-motion: no-preference) {
+  .brand { transition: transform 160ms ease-out; }
+}
 .brand small { display: block; margin-top: 9px; font: 650 9px/1.2 "Segoe UI", sans-serif; letter-spacing: .21em; }
 .brand i { font-weight: normal; }
 .mark { display: grid; place-items: center; background: var(--terra); color: white; width: 44px; height: 44px; border-radius: 50%; font-size: 27px; }
