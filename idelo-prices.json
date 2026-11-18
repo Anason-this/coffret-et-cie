@@ -1,0 +1,10368 @@
+{
+  "source": "https://idelo.me/collections/",
+  "currency": "MAD",
+  "basis": "TTC sans marquage",
+  "checkedAt": "2026-11-18T14:53:55.722Z",
+  "pricesBySku": {
+    "IDL-HYD-093": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-017": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-CAR-182": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-225": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-ECR-312": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-ECR-257": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-220": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-CAR-059": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-TEC-034": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-HYD-342": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-462": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-SAC-352": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-531": {
+      "unitMinor": 21300,
+      "minimum": 50
+    },
+    "IDL-SAC-433": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-HYD-213": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-183": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-151": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-HYD-368": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-456": {
+      "unitMinor": 12600,
+      "minimum": 50
+    },
+    "IDL-SAC-629": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-260": {
+      "unitMinor": 13500,
+      "minimum": 50
+    },
+    "IDL-TEC-235": {
+      "unitMinor": 11700,
+      "minimum": 50
+    },
+    "IDL-HYD-156": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-HYD-163": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-177": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-033": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-HYD-111": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-TEC-186": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-176": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-217": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-TEC-334": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-492": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-285": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-488": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-225": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-403": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-134": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-HYD-131": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-219": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-090": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-329": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-TEC-442": {
+      "unitMinor": 30400,
+      "minimum": 50
+    },
+    "IDL-TEC-016": {
+      "unitMinor": 16500,
+      "minimum": 50
+    },
+    "IDL-HYD-490": {
+      "unitMinor": 9800,
+      "minimum": 50
+    },
+    "IDL-HYD-315": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-HYD-469": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-361": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-HYD-263": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-468": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-HYD-123": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-CLE-160": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-611": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-214": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-391": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-TRO-011": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-SAC-253": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-341": {
+      "unitMinor": 54000,
+      "minimum": 50
+    },
+    "IDL-HYD-190": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-155": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-239": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-202": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-CLE-124": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-TEC-433": {
+      "unitMinor": 11300,
+      "minimum": 50
+    },
+    "IDL-TEC-082": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-CLE-089": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-006": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-SAC-345": {
+      "unitMinor": 11000,
+      "minimum": 50
+    },
+    "IDL-SAC-439": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-541": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-328": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-036": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-019": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-CLE-035": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CLE-010": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-HYD-114": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-HYD-383": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-HYD-410": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-SAC-081": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-255": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-HYD-366": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-CAR-141": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-CAR-170": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-HYD-483": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-180": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-SAC-132": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-508": {
+      "unitMinor": 9800,
+      "minimum": 50
+    },
+    "IDL-TEC-167": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-087": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-226": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-HYD-436": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-092": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-CLE-069": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-HYD-185": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-445": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-422": {
+      "unitMinor": 31200,
+      "minimum": 50
+    },
+    "IDL-SAC-588": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-CLE-083": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-220": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-CAR-101": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-647": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-119": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-133": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-095": {
+      "unitMinor": 11700,
+      "minimum": 50
+    },
+    "IDL-SAC-123": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-ECR-137": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-011": {
+      "unitMinor": 29600,
+      "minimum": 50
+    },
+    "IDL-HYD-035": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-345": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-CAR-026": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-ECR-024": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-270": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-HYD-502": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-014": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-HYD-487": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-CAR-023": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-CLE-024": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-013": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-TEC-021": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-CAR-035": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-323": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-HYD-186": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-434": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-246": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-408": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-HYD-418": {
+      "unitMinor": 14800,
+      "minimum": 50
+    },
+    "IDL-TEC-483": {
+      "unitMinor": 27600,
+      "minimum": 50
+    },
+    "IDL-TEC-468": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-227": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-345": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-092": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-419": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-364": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-CAR-102": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-387": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-SAC-063": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-063": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-ECR-165": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-130": {
+      "unitMinor": 28300,
+      "minimum": 50
+    },
+    "IDL-TEC-223": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-441": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-SAC-245": {
+      "unitMinor": 16000,
+      "minimum": 50
+    },
+    "IDL-SAC-521": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-SAC-379": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-SAC-580": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-SAC-686": {
+      "unitMinor": 37100,
+      "minimum": 50
+    },
+    "IDL-HYD-010": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-025": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-102": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-TEC-457": {
+      "unitMinor": 13000,
+      "minimum": 50
+    },
+    "IDL-TEC-451": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-195": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-264": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-TEC-140": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-287": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-199": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-152": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-154": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-SAC-115": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-TEC-067": {
+      "unitMinor": 17000,
+      "minimum": 50
+    },
+    "IDL-HYD-243": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-153": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-TEC-152": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-TEC-495": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-SAC-499": {
+      "unitMinor": 13100,
+      "minimum": 50
+    },
+    "IDL-SAC-607": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-120": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-476": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-522": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-194": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-279": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-660": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-111": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-111": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-CAR-269": {
+      "unitMinor": 13300,
+      "minimum": 50
+    },
+    "IDL-HYD-425": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-CAR-226": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-CLE-050": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-273": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CAR-303": {
+      "unitMinor": 11000,
+      "minimum": 50
+    },
+    "IDL-CAR-011": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-CLE-082": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-209": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-140": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-423": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-633": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-248": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-ECR-221": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-TEC-230": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-SAC-661": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-216": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-447": {
+      "unitMinor": 36000,
+      "minimum": 50
+    },
+    "IDL-TEC-098": {
+      "unitMinor": 16700,
+      "minimum": 50
+    },
+    "IDL-HYD-152": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-ECR-193": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-039": {
+      "unitMinor": 19000,
+      "minimum": 50
+    },
+    "IDL-CLE-146": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-TEC-519": {
+      "unitMinor": 19500,
+      "minimum": 50
+    },
+    "IDL-SAC-545": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-SAC-481": {
+      "unitMinor": 24800,
+      "minimum": 50
+    },
+    "IDL-SAC-139": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-SAC-531": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-554": {
+      "unitMinor": 23300,
+      "minimum": 50
+    },
+    "IDL-HYD-464": {
+      "unitMinor": 12400,
+      "minimum": 50
+    },
+    "IDL-HYD-207": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-295": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-263": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-HYD-411": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-TEC-425": {
+      "unitMinor": 14300,
+      "minimum": 50
+    },
+    "IDL-SAC-503": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-HYD-141": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-349": {
+      "unitMinor": 11600,
+      "minimum": 50
+    },
+    "IDL-SAC-305": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-CAR-067": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-232": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-141": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-370": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-049": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-SAC-630": {
+      "unitMinor": 15700,
+      "minimum": 50
+    },
+    "IDL-SAC-415": {
+      "unitMinor": 14800,
+      "minimum": 50
+    },
+    "IDL-SAC-670": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-SAC-583": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-SAC-687": {
+      "unitMinor": 51300,
+      "minimum": 50
+    },
+    "IDL-SAC-528": {
+      "unitMinor": 11100,
+      "minimum": 50
+    },
+    "IDL-SAC-535": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-076": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-070": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-627": {
+      "unitMinor": 23400,
+      "minimum": 50
+    },
+    "IDL-HYD-281": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-188": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-340": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-210": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-298": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-HYD-375": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-TEC-051": {
+      "unitMinor": 18900,
+      "minimum": 50
+    },
+    "IDL-CAR-307": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-033": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-008": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-082": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-ECR-089": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-006": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-260": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-ECR-010": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-011": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-007": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-018": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-TEC-007": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-CLE-019": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-069": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-095": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-063": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-066": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-095": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-SAC-705": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-CAR-302": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-CAR-264": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-HYD-024": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-061": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-SAC-377": {
+      "unitMinor": 13500,
+      "minimum": 50
+    },
+    "IDL-SAC-247": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-SAC-161": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-CAR-265": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-404": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-107": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-HYD-479": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-058": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-043": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-ECR-085": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-019": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-CLE-029": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CLE-039": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-052": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-HYD-041": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-ECR-035": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CLE-038": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CAR-249": {
+      "unitMinor": 23400,
+      "minimum": 50
+    },
+    "IDL-CAR-294": {
+      "unitMinor": 39700,
+      "minimum": 50
+    },
+    "IDL-TEC-254": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-434": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-SAC-256": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-311": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-331": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-SAC-387": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-HYD-351": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-165": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-215": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-418": {
+      "unitMinor": 14000,
+      "minimum": 50
+    },
+    "IDL-SAC-420": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-TEC-162": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-115": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-TEC-406": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-TEC-477": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-ECR-096": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-TEC-521": {
+      "unitMinor": 14200,
+      "minimum": 50
+    },
+    "IDL-TEC-528": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-HYD-094": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-CAR-017": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-038": {
+      "unitMinor": 12100,
+      "minimum": 50
+    },
+    "IDL-SAC-040": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-CAR-258": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-TEC-526": {
+      "unitMinor": 28700,
+      "minimum": 50
+    },
+    "IDL-TEC-040": {
+      "unitMinor": 19300,
+      "minimum": 50
+    },
+    "IDL-SAC-026": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-008": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-018": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-017": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-010": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-001": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-007": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-009": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-020": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-002": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-023": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-011": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-003": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-013": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-024": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-044": {
+      "unitMinor": 37700,
+      "minimum": 50
+    },
+    "IDL-CAR-122": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-261": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-411": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-432": {
+      "unitMinor": 42500,
+      "minimum": 50
+    },
+    "IDL-ECR-106": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CLE-085": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-248": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-372": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-207": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-487": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-095": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-HYD-155": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-162": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-ECR-207": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-031": {
+      "unitMinor": 20600,
+      "minimum": 50
+    },
+    "IDL-TEC-509": {
+      "unitMinor": 49100,
+      "minimum": 50
+    },
+    "IDL-CLE-016": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-055": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-CAR-236": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-ECR-333": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-282": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-204": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-518": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-CAR-034": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-183": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-ECR-214": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-309": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-259": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-243": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-CLE-023": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-HYD-477": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-187": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-272": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-222": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-HYD-371": {
+      "unitMinor": 19500,
+      "minimum": 50
+    },
+    "IDL-HYD-072": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-ECR-037": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-SAC-166": {
+      "unitMinor": 13900,
+      "minimum": 50
+    },
+    "IDL-SAC-053": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-SAC-413": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-SAC-501": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-280": {
+      "unitMinor": 31000,
+      "minimum": 50
+    },
+    "IDL-TEC-013": {
+      "unitMinor": 39900,
+      "minimum": 50
+    },
+    "IDL-CAR-032": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-CAR-187": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-ECR-197": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-283": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-ECR-275": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-205": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-192": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-040": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-ECR-359": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CAR-190": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-ECR-330": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-308": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-164": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-008": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-TEC-004": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-TEC-053": {
+      "unitMinor": 27900,
+      "minimum": 50
+    },
+    "IDL-ECR-040": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-384": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-HYD-447": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-429": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-395": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-275": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-CAR-266": {
+      "unitMinor": 18200,
+      "minimum": 50
+    },
+    "IDL-CAR-256": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-CLE-067": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-402": {
+      "unitMinor": 26500,
+      "minimum": 50
+    },
+    "IDL-SAC-362": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-693": {
+      "unitMinor": 15900,
+      "minimum": 50
+    },
+    "IDL-SAC-453": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-SAC-300": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-TEC-282": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-CAR-128": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CLE-123": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-ECR-184": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TRO-012": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-SAC-077": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-103": {
+      "unitMinor": 11800,
+      "minimum": 50
+    },
+    "IDL-ECR-276": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-158": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-432": {
+      "unitMinor": 11600,
+      "minimum": 50
+    },
+    "IDL-TEC-166": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-193": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-468": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-269": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-394": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-CAR-200": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-237": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-ECR-102": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-265": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-072": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-301": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-154": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-TEC-079": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-357": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-TEC-506": {
+      "unitMinor": 57800,
+      "minimum": 50
+    },
+    "IDL-TRO-002": {
+      "unitMinor": 17700,
+      "minimum": 50
+    },
+    "IDL-TEC-500": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-407": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-329": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-390": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-417": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-CAR-173": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-CLE-064": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-384": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-279": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-SAC-058": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-250": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-ECR-132": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-136": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-CLE-015": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-009": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-044": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-HYD-481": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-461": {
+      "unitMinor": 18100,
+      "minimum": 50
+    },
+    "IDL-CLE-110": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-587": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-SAC-251": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-HYD-452": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-615": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-TEC-192": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-258": {
+      "unitMinor": 17200,
+      "minimum": 50
+    },
+    "IDL-TEC-214": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-SAC-197": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-156": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TRO-010": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-CAR-210": {
+      "unitMinor": 14300,
+      "minimum": 50
+    },
+    "IDL-CAR-076": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-ECR-281": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-084": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-TEC-041": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-TEC-043": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-SAC-546": {
+      "unitMinor": 15200,
+      "minimum": 50
+    },
+    "IDL-SAC-520": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-SAC-557": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-SAC-671": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-497": {
+      "unitMinor": 31700,
+      "minimum": 50
+    },
+    "IDL-ECR-053": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-049": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-076": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-515": {
+      "unitMinor": 35100,
+      "minimum": 50
+    },
+    "IDL-HYD-048": {
+      "unitMinor": 13100,
+      "minimum": 50
+    },
+    "IDL-SAC-550": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-SAC-129": {
+      "unitMinor": 15600,
+      "minimum": 50
+    },
+    "IDL-SAC-508": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-442": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-625": {
+      "unitMinor": 18900,
+      "minimum": 50
+    },
+    "IDL-HYD-369": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-070": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-HYD-282": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-333": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-HYD-295": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-262": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-HYD-259": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-HYD-106": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-145": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-TEC-466": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-SAC-351": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-TEC-305": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-094": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-TEC-259": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-HYD-339": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-221": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-SAC-138": {
+      "unitMinor": 19900,
+      "minimum": 50
+    },
+    "IDL-SAC-116": {
+      "unitMinor": 75700,
+      "minimum": 50
+    },
+    "IDL-SAC-283": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CLE-056": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-175": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-TEC-480": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-HYD-039": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-CAR-004": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-009": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-ECR-065": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-092": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-056": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-044": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-028": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-005": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-020": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-045": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-097": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-ECR-018": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-038": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-HYD-100": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-CAR-262": {
+      "unitMinor": 20500,
+      "minimum": 50
+    },
+    "IDL-SAC-700": {
+      "unitMinor": 12400,
+      "minimum": 50
+    },
+    "IDL-CAR-300": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-058": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-TEC-328": {
+      "unitMinor": 17300,
+      "minimum": 50
+    },
+    "IDL-SAC-339": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-ECR-237": {
+      "unitMinor": 36400,
+      "minimum": 50
+    },
+    "IDL-TEC-070": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-202": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-322": {
+      "unitMinor": 12100,
+      "minimum": 50
+    },
+    "IDL-TEC-240": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-TEC-414": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-533": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-290": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-123": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-156": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-275": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-TEC-204": {
+      "unitMinor": 14000,
+      "minimum": 50
+    },
+    "IDL-ECR-046": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-105": {
+      "unitMinor": 15700,
+      "minimum": 50
+    },
+    "IDL-SAC-592": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-SAC-581": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-SAC-502": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-SAC-595": {
+      "unitMinor": 32300,
+      "minimum": 50
+    },
+    "IDL-HYD-461": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-SAC-034": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-036": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-035": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-031": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-032": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-014": {
+      "unitMinor": 13000,
+      "minimum": 50
+    },
+    "IDL-CAR-003": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-555": {
+      "unitMinor": 13800,
+      "minimum": 50
+    },
+    "IDL-SAC-436": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-479": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-SAC-228": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-666": {
+      "unitMinor": 26500,
+      "minimum": 50
+    },
+    "IDL-CAR-041": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-021": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-054": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-303": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-HYD-330": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-146": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-HYD-124": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-HYD-063": {
+      "unitMinor": 12100,
+      "minimum": 50
+    },
+    "IDL-ECR-031": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-484": {
+      "unitMinor": 48400,
+      "minimum": 50
+    },
+    "IDL-TEC-450": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-393": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-168": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-TEC-320": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-TEC-418": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-TEC-359": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-CLE-066": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-103": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-SAC-286": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-061": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-HYD-223": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-121": {
+      "unitMinor": 16100,
+      "minimum": 50
+    },
+    "IDL-TEC-143": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-CAR-044": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CAR-022": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-050": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-312": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-CLE-021": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CLE-036": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-037": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-313": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-HYD-150": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-TEC-377": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-TEC-487": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-365": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-HYD-327": {
+      "unitMinor": 11800,
+      "minimum": 50
+    },
+    "IDL-TEC-405": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-TEC-266": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-HYD-354": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-214": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-317": {
+      "unitMinor": 18200,
+      "minimum": 50
+    },
+    "IDL-SAC-131": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-CLE-041": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-144": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-088": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-413": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-HYD-161": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-CLE-017": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-043": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-438": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-CLE-128": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-677": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-370": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-463": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-SAC-562": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-HYD-238": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CAR-138": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-190": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-157": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-128": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-590": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-CLE-043": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CLE-051": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-349": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-072": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-HYD-059": {
+      "unitMinor": 11000,
+      "minimum": 50
+    },
+    "IDL-CAR-247": {
+      "unitMinor": 38500,
+      "minimum": 50
+    },
+    "IDL-SAC-702": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-HYD-074": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-TEC-379": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-TEC-075": {
+      "unitMinor": 36000,
+      "minimum": 50
+    },
+    "IDL-SAC-275": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-233": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-TEC-458": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-CAR-123": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CAR-166": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-CAR-136": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-TEC-411": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-SAC-451": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-213": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-153": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-174": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-TEC-437": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-TEC-366": {
+      "unitMinor": 16100,
+      "minimum": 50
+    },
+    "IDL-HYD-430": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-CAR-012": {
+      "unitMinor": 25800,
+      "minimum": 50
+    },
+    "IDL-CAR-048": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-TEC-048": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-SAC-042": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-047": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-027": {
+      "unitMinor": 45700,
+      "minimum": 50
+    },
+    "IDL-HYD-148": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-SAC-707": {
+      "unitMinor": 23600,
+      "minimum": 50
+    },
+    "IDL-ECR-016": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-486": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-SAC-672": {
+      "unitMinor": 13600,
+      "minimum": 50
+    },
+    "IDL-SAC-613": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-SAC-125": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-SAC-424": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-023": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-ECR-080": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-074": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-ECR-029": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-ECR-077": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-025": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-CAR-058": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-CAR-306": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-072": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-063": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-ECR-014": {
+      "unitMinor": 24100,
+      "minimum": 50
+    },
+    "IDL-ECR-101": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-078": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-083": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-HYD-082": {
+      "unitMinor": 24900,
+      "minimum": 50
+    },
+    "IDL-HYD-196": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CAR-135": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-ECR-294": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-356": {
+      "unitMinor": 13400,
+      "minimum": 50
+    },
+    "IDL-ECR-285": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-013": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-088": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-CAR-259": {
+      "unitMinor": 15600,
+      "minimum": 50
+    },
+    "IDL-HYD-382": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-HYD-334": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-078": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-CAR-150": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-HYD-299": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-324": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-CLE-105": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-HYD-310": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-SAC-199": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-665": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-249": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-164": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-HYD-171": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-265": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-064": {
+      "unitMinor": 16900,
+      "minimum": 50
+    },
+    "IDL-TEC-157": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-TEC-494": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-CAR-305": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-208": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CLE-102": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-250": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-283": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-473": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-TEC-164": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-259": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-350": {
+      "unitMinor": 19500,
+      "minimum": 50
+    },
+    "IDL-SAC-282": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-HYD-195": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-TEC-112": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-353": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-ECR-026": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CLE-008": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-019": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-011": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-137": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-CAR-040": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-HYD-347": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-HYD-292": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-045": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-TEC-527": {
+      "unitMinor": 20600,
+      "minimum": 50
+    },
+    "IDL-ECR-032": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-026": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-CAR-064": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-CLE-161": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-601": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-SAC-281": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-285": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-151": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CLE-074": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-189": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-187": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-236": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-499": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-385": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-TEC-351": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-110": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-090": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CLE-090": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-062": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-CAR-061": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-CAR-065": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-CAR-152": {
+      "unitMinor": 20800,
+      "minimum": 50
+    },
+    "IDL-CAR-208": {
+      "unitMinor": 8500,
+      "minimum": 50
+    },
+    "IDL-ECR-268": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-347": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-227": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-CAR-271": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-450": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-240": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-300": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-151": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-HYD-466": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-445": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-HYD-056": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-ECR-319": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-341": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-168": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-198": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-363": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-TEC-099": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-SAC-260": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CLE-099": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-391": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-206": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-339": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-219": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-270": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-569": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-SAC-329": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-134": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-SAC-173": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-TEC-472": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-HYD-491": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-HYD-079": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-CLE-121": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-537": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-396": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-ECR-314": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-SAC-454": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-ECR-166": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-SAC-360": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-HYD-197": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-183": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-306": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-429": {
+      "unitMinor": 15400,
+      "minimum": 50
+    },
+    "IDL-TEC-407": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-388": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-TEC-088": {
+      "unitMinor": 16200,
+      "minimum": 50
+    },
+    "IDL-CLE-095": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-201": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-ECR-139": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-274": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-141": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-155": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CLE-135": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-491": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-056": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-HYD-448": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-SAC-476": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-CLE-079": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-248": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-HYD-257": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-196": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-223": {
+      "unitMinor": 37400,
+      "minimum": 50
+    },
+    "IDL-SAC-548": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-SAC-378": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-147": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-ECR-322": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-116": {
+      "unitMinor": 17400,
+      "minimum": 50
+    },
+    "IDL-CAR-137": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-ECR-296": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-ECR-304": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-196": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-125": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-HYD-120": {
+      "unitMinor": 31200,
+      "minimum": 50
+    },
+    "IDL-CLE-133": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-597": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-319": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-471": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-556": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-TEC-187": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-TEC-253": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-ECR-187": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-322": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-229": {
+      "unitMinor": 21500,
+      "minimum": 50
+    },
+    "IDL-SAC-549": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-252": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-ECR-108": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-321": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-CAR-071": {
+      "unitMinor": 16100,
+      "minimum": 50
+    },
+    "IDL-HYD-016": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-CAR-163": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-ECR-125": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-ECR-115": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-353": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-CAR-159": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-177": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-TEC-080": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-SAC-335": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-ECR-241": {
+      "unitMinor": 36700,
+      "minimum": 50
+    },
+    "IDL-TEC-485": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-205": {
+      "unitMinor": 12700,
+      "minimum": 50
+    },
+    "IDL-TEC-336": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-TEC-246": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-HYD-178": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-SAC-570": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-278": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-128": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-SAC-172": {
+      "unitMinor": 15500,
+      "minimum": 50
+    },
+    "IDL-TEC-093": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-TEC-150": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-HYD-118": {
+      "unitMinor": 19500,
+      "minimum": 50
+    },
+    "IDL-CAR-177": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-ECR-256": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-355": {
+      "unitMinor": 11200,
+      "minimum": 50
+    },
+    "IDL-ECR-146": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-230": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-002": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-ECR-017": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-424": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-HYD-470": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-SAC-082": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-TEC-340": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-HYD-387": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-415": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-379": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-HYD-428": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-055": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-062": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-HYD-132": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-CLE-070": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-091": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-266": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-TRO-005": {
+      "unitMinor": 20600,
+      "minimum": 50
+    },
+    "IDL-HYD-013": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-CAR-273": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-HYD-498": {
+      "unitMinor": 9800,
+      "minimum": 50
+    },
+    "IDL-TEC-431": {
+      "unitMinor": 18800,
+      "minimum": 50
+    },
+    "IDL-TEC-188": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-296": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-348": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-298": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-423": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-TEC-374": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-ECR-150": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-126": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-060": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-CAR-066": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-HYD-229": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-138": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-073": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-054": {
+      "unitMinor": 13700,
+      "minimum": 50
+    },
+    "IDL-SAC-631": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-SAC-463": {
+      "unitMinor": 17000,
+      "minimum": 50
+    },
+    "IDL-SAC-262": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-515": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-289": {
+      "unitMinor": 20300,
+      "minimum": 50
+    },
+    "IDL-HYD-399": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-HYD-412": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-343": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-252": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-SAC-695": {
+      "unitMinor": 17400,
+      "minimum": 50
+    },
+    "IDL-HYD-432": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-439": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-650": {
+      "unitMinor": 17400,
+      "minimum": 50
+    },
+    "IDL-SAC-516": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-574": {
+      "unitMinor": 13500,
+      "minimum": 50
+    },
+    "IDL-SAC-426": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-HYD-033": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-HYD-506": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-CAR-246": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-343": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-149": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-235": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CLE-142": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-606": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-127": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-397": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-SAC-469": {
+      "unitMinor": 16300,
+      "minimum": 50
+    },
+    "IDL-TEC-183": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-355": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-CAR-095": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-241": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-267": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-426": {
+      "unitMinor": 12000,
+      "minimum": 50
+    },
+    "IDL-TEC-404": {
+      "unitMinor": 19800,
+      "minimum": 50
+    },
+    "IDL-CAR-191": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-TEC-086": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-CLE-093": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CAR-171": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-HYD-034": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-SAC-049": {
+      "unitMinor": 11900,
+      "minimum": 50
+    },
+    "IDL-SAC-444": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-SAC-312": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-160": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-381": {
+      "unitMinor": 24200,
+      "minimum": 50
+    },
+    "IDL-CLE-077": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-128": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-SAC-347": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CLE-150": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-SAC-563": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-SAC-288": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-388": {
+      "unitMinor": 29900,
+      "minimum": 50
+    },
+    "IDL-ECR-195": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-446": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-181": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-TEC-464": {
+      "unitMinor": 22300,
+      "minimum": 50
+    },
+    "IDL-SAC-065": {
+      "unitMinor": 23000,
+      "minimum": 50
+    },
+    "IDL-CAR-079": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-320": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-CAR-111": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-CLE-109": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-658": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-142": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CLE-130": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-685": {
+      "unitMinor": 40100,
+      "minimum": 50
+    },
+    "IDL-SAC-258": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-HYD-261": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-160": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-243": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-289": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-534": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-383": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-114": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-SAC-093": {
+      "unitMinor": 21700,
+      "minimum": 50
+    },
+    "IDL-CLE-075": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-231": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-SAC-614": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-SAC-624": {
+      "unitMinor": 19000,
+      "minimum": 50
+    },
+    "IDL-SAC-490": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-653": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-505": {
+      "unitMinor": 20500,
+      "minimum": 50
+    },
+    "IDL-HYD-165": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-HYD-385": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-267": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-286": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-HYD-109": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-490": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-TEC-209": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-293": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-172": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-TEC-316": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TEC-280": {
+      "unitMinor": 13300,
+      "minimum": 50
+    },
+    "IDL-CLE-113": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-155": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-589": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-SAC-358": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-CLE-044": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-320": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-156": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-TEC-333": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-488": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-ECR-198": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-142": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-324": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CAR-221": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-052": {
+      "unitMinor": 27000,
+      "minimum": 50
+    },
+    "IDL-HYD-341": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-HYD-473": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-HYD-472": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-HYD-388": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-HYD-320": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-HYD-020": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-SAC-529": {
+      "unitMinor": 14200,
+      "minimum": 50
+    },
+    "IDL-SAC-238": {
+      "unitMinor": 8500,
+      "minimum": 50
+    },
+    "IDL-SAC-438": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-SAC-419": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-168": {
+      "unitMinor": 32000,
+      "minimum": 50
+    },
+    "IDL-CAR-039": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CAR-060": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-CAR-002": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-015": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-016": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CAR-043": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-079": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-064": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-098": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-099": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-025": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-081": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-084": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-027": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-033": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-HYD-458": {
+      "unitMinor": 11500,
+      "minimum": 50
+    },
+    "IDL-HYD-353": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-140": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-231": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-460": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-CAR-036": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-087": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-TEC-342": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-TEC-101": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-SAC-083": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-ECR-240": {
+      "unitMinor": 62600,
+      "minimum": 50
+    },
+    "IDL-TEC-297": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-CAR-097": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-332": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-SAC-218": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-TEC-057": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-SAC-571": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-050": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-127": {
+      "unitMinor": 8600,
+      "minimum": 50
+    },
+    "IDL-SAC-171": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-TEC-324": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-TEC-459": {
+      "unitMinor": 11700,
+      "minimum": 50
+    },
+    "IDL-CLE-062": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-236": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-135": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-219": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-559": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-306": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-306": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-CAR-100": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-566": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-263": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-233": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CAR-077": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-ECR-119": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-ECR-127": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-154": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-037": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-108": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-047": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-382": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-TEC-074": {
+      "unitMinor": 22300,
+      "minimum": 50
+    },
+    "IDL-SAC-276": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-ECR-235": {
+      "unitMinor": 15100,
+      "minimum": 50
+    },
+    "IDL-TEC-279": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-138": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-315": {
+      "unitMinor": 18600,
+      "minimum": 50
+    },
+    "IDL-ECR-202": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CAR-142": {
+      "unitMinor": 11400,
+      "minimum": 50
+    },
+    "IDL-SAC-664": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-211": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-167": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-HYD-176": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-335": {
+      "unitMinor": 8600,
+      "minimum": 50
+    },
+    "IDL-TEC-037": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-CAR-253": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-HYD-091": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-CLE-119": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-486": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-363": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-441": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-SAC-684": {
+      "unitMinor": 8500,
+      "minimum": 50
+    },
+    "IDL-HYD-228": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-276": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-SAC-212": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-194": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-295": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-445": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-TEC-325": {
+      "unitMinor": 17000,
+      "minimum": 50
+    },
+    "IDL-CLE-045": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-327": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-148": {
+      "unitMinor": 45700,
+      "minimum": 50
+    },
+    "IDL-CLE-152": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-513": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-SAC-266": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-389": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-ECR-244": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-106": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-217": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-SAC-191": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-297": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-308": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-389": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-492": {
+      "unitMinor": 16500,
+      "minimum": 50
+    },
+    "IDL-SAC-402": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-CAR-073": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-CLE-059": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CLE-025": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-244": {
+      "unitMinor": 19600,
+      "minimum": 50
+    },
+    "IDL-ECR-070": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-504": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-CAR-275": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-698": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-055": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-CAR-289": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-SAC-022": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-HYD-496": {
+      "unitMinor": 12600,
+      "minimum": 50
+    },
+    "IDL-HYD-492": {
+      "unitMinor": 7900,
+      "minimum": 50
+    },
+    "IDL-HYD-113": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-ECR-015": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-120": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-ECR-307": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-251": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-339": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-042": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-CLE-153": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-655": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-383": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CLE-129": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TRO-008": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-TEC-179": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-221": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-CAR-093": {
+      "unitMinor": 12400,
+      "minimum": 50
+    },
+    "IDL-SAC-216": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-117": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-206": {
+      "unitMinor": 29600,
+      "minimum": 50
+    },
+    "IDL-TEC-381": {
+      "unitMinor": 48000,
+      "minimum": 50
+    },
+    "IDL-HYD-144": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-SAC-092": {
+      "unitMinor": 19700,
+      "minimum": 50
+    },
+    "IDL-CLE-054": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-209": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-CAR-250": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-TEC-517": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-ECR-048": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-011": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-453": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-HYD-224": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-SAC-308": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-247": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-363": {
+      "unitMinor": 15600,
+      "minimum": 50
+    },
+    "IDL-CAR-139": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-349": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-HYD-255": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-SAC-340": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-061": {
+      "unitMinor": 21200,
+      "minimum": 50
+    },
+    "IDL-SAC-189": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-TRO-004": {
+      "unitMinor": 16600,
+      "minimum": 50
+    },
+    "IDL-HYD-194": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-HYD-183": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-HYD-386": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-TEC-042": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-494": {
+      "unitMinor": 16400,
+      "minimum": 50
+    },
+    "IDL-SAC-683": {
+      "unitMinor": 22600,
+      "minimum": 50
+    },
+    "IDL-SAC-674": {
+      "unitMinor": 12200,
+      "minimum": 50
+    },
+    "IDL-SAC-274": {
+      "unitMinor": 7900,
+      "minimum": 50
+    },
+    "IDL-CAR-278": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-065": {
+      "unitMinor": 13900,
+      "minimum": 50
+    },
+    "IDL-ECR-192": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-120": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-318": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-429": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-254": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-317": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-307": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-HYD-273": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-483": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-199": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-558": {
+      "unitMinor": 12500,
+      "minimum": 50
+    },
+    "IDL-SAC-101": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-130": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-ECR-318": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-222": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-120": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-SAC-485": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-SAC-051": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-CAR-146": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-209": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-175": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-212": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TEC-159": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-112": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-486": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-381": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-HYD-365": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-064": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-CAR-070": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CLE-087": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-211": {
+      "unitMinor": 49000,
+      "minimum": 50
+    },
+    "IDL-CAR-297": {
+      "unitMinor": 14300,
+      "minimum": 50
+    },
+    "IDL-TEC-532": {
+      "unitMinor": 22400,
+      "minimum": 50
+    },
+    "IDL-ECR-003": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-127": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-HYD-392": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-SAC-086": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-644": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-SAC-600": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-SAC-284": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-262": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-194": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-391": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-186": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CLE-138": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-057": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-CAR-078": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-ECR-325": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-105": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-HYD-438": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-HYD-419": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-HYD-426": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-HYD-125": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-HYD-181": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-495": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-HYD-037": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-022": {
+      "unitMinor": 27000,
+      "minimum": 50
+    },
+    "IDL-CAR-016": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-066": {
+      "unitMinor": 10100,
+      "minimum": 50
+    },
+    "IDL-TEC-496": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-075": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-ECR-228": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-TEC-278": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-ECR-182": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-430": {
+      "unitMinor": 21200,
+      "minimum": 50
+    },
+    "IDL-CLE-091": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-603": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-448": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-096": {
+      "unitMinor": 25300,
+      "minimum": 50
+    },
+    "IDL-SAC-108": {
+      "unitMinor": 56300,
+      "minimum": 50
+    },
+    "IDL-CAR-085": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-TEC-410": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-TEC-292": {
+      "unitMinor": 30200,
+      "minimum": 50
+    },
+    "IDL-TEC-023": {
+      "unitMinor": 13900,
+      "minimum": 50
+    },
+    "IDL-HYD-068": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-CLE-004": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-032": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-086": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-182": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CLE-117": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-509": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-359": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-390": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-ECR-246": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-SAC-252": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-337": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-192": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-154": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-309": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-525": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CLE-116": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-467": {
+      "unitMinor": 12000,
+      "minimum": 50
+    },
+    "IDL-TEC-081": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-CLE-073": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-216": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-HYD-499": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-CLE-141": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-669": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-395": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-420": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-SAC-575": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-HYD-227": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CAR-132": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-199": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-SAC-113": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-261": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-435": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-TEC-409": {
+      "unitMinor": 13600,
+      "minimum": 50
+    },
+    "IDL-TEC-228": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-145": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-CLE-096": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-203": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-CLE-101": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-191": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-SAC-079": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-503": {
+      "unitMinor": null,
+      "minimum": 50
+    },
+    "IDL-SAC-582": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-ECR-175": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-274": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-TEC-219": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-SAC-184": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-169": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-478": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CAR-068": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-SAC-098": {
+      "unitMinor": 16400,
+      "minimum": 50
+    },
+    "IDL-ECR-273": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-113": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-676": {
+      "unitMinor": 16100,
+      "minimum": 50
+    },
+    "IDL-SAC-649": {
+      "unitMinor": 16800,
+      "minimum": 50
+    },
+    "IDL-SAC-327": {
+      "unitMinor": 11300,
+      "minimum": 50
+    },
+    "IDL-SAC-696": {
+      "unitMinor": 82200,
+      "minimum": 50
+    },
+    "IDL-SAC-366": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-HYD-042": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-HYD-076": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-CAR-304": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-CLE-061": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-437": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-144": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-ECR-218": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-560": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-ECR-178": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-299": {
+      "unitMinor": 13600,
+      "minimum": 50
+    },
+    "IDL-TEC-229": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-CLE-068": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-224": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-181": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-ECR-110": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-121": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-161": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-122": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-CLE-078": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-301": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-272": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-688": {
+      "unitMinor": 42600,
+      "minimum": 50
+    },
+    "IDL-SAC-654": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-HYD-239": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-CAR-144": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-TEC-222": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-SAC-298": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-114": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-479": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-069": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-099": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-ECR-299": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CLE-106": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-CLE-006": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-292": {
+      "unitMinor": 12200,
+      "minimum": 50
+    },
+    "IDL-CAR-051": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-047": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-005": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-HYD-415": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-215": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-133": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-218": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-217": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-462": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-CLE-007": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-523": {
+      "unitMinor": 17700,
+      "minimum": 50
+    },
+    "IDL-SAC-616": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-SAC-518": {
+      "unitMinor": 13900,
+      "minimum": 50
+    },
+    "IDL-SAC-652": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-SAC-338": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-223": {
+      "unitMinor": 18000,
+      "minimum": 50
+    },
+    "IDL-CAR-186": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-ECR-335": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-354": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-ECR-292": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-189": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-TEC-467": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-TEC-311": {
+      "unitMinor": 19000,
+      "minimum": 50
+    },
+    "IDL-SAC-361": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-ECR-236": {
+      "unitMinor": 25000,
+      "minimum": 50
+    },
+    "IDL-TEC-455": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-CAR-096": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-321": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-HYD-277": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-277": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-538": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-185": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-118": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-148": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-105": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-TEC-454": {
+      "unitMinor": 13800,
+      "minimum": 50
+    },
+    "IDL-ECR-091": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-049": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-CLE-026": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-278": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-CLE-030": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CLE-140": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-594": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-412": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TEC-286": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-174": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-159": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-215": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-188": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-269": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-310": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-TEC-386": {
+      "unitMinor": 14000,
+      "minimum": 50
+    },
+    "IDL-TEC-352": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-TEC-132": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-TEC-076": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CLE-088": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-025": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-002": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-CAR-153": {
+      "unitMinor": 23200,
+      "minimum": 50
+    },
+    "IDL-ECR-023": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-240": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-TEC-452": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-392": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-328": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-SAC-691": {
+      "unitMinor": 39600,
+      "minimum": 50
+    },
+    "IDL-TEC-416": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-354": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-SAC-680": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-CAR-083": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-059": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-TEC-056": {
+      "unitMinor": 6200,
+      "minimum": 50
+    },
+    "IDL-ECR-157": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-TEC-116": {
+      "unitMinor": 11300,
+      "minimum": 50
+    },
+    "IDL-SAC-311": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-073": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-HYD-029": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-CAR-031": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-HYD-062": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-CAR-006": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-006": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-075": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-SAC-634": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-SAC-401": {
+      "unitMinor": 14400,
+      "minimum": 50
+    },
+    "IDL-SAC-254": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-321": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-343": {
+      "unitMinor": 16900,
+      "minimum": 50
+    },
+    "IDL-TEC-344": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-TEC-403": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-TEC-524": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-SAC-332": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CLE-100": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-281": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-260": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-348": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-ECR-140": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-331": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-421": {
+      "unitMinor": 34100,
+      "minimum": 50
+    },
+    "IDL-SAC-277": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-190": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-176": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-TEC-245": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-TEC-529": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-TEC-039": {
+      "unitMinor": 17300,
+      "minimum": 50
+    },
+    "IDL-TEC-182": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-HYD-212": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-331": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-465": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-512": {
+      "unitMinor": 38200,
+      "minimum": 50
+    },
+    "IDL-HYD-352": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-HYD-241": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-HYD-032": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-361": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CLE-040": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-028": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-012": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-337": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-116": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-260": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-229": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CAR-192": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-290": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-216": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-332": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-108": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-CAR-127": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-ECR-121": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-206": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-289": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-143": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-009": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-HYD-478": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-HYD-083": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-CLE-080": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-359": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-SAC-179": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-291": {
+      "unitMinor": 18300,
+      "minimum": 50
+    },
+    "IDL-SAC-586": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-302": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-405": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-346": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-SAC-149": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-TEC-178": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-675": {
+      "unitMinor": 30700,
+      "minimum": 50
+    },
+    "IDL-CLE-048": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-080": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-269": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CLE-114": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-505": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-112": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-ECR-013": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-CAR-240": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-ECR-120": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-129": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-ECR-346": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-212": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-495": {
+      "unitMinor": 11300,
+      "minimum": 50
+    },
+    "IDL-SAC-449": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-678": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-SAC-517": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-648": {
+      "unitMinor": 23500,
+      "minimum": 50
+    },
+    "IDL-TRO-014": {
+      "unitMinor": 18700,
+      "minimum": 50
+    },
+    "IDL-ECR-088": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-279": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-HYD-067": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-ECR-042": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-SAC-004": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CLE-005": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-157": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-266": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-280": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-118": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-068": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-HYD-047": {
+      "unitMinor": 18300,
+      "minimum": 50
+    },
+    "IDL-ECR-002": {
+      "unitMinor": null,
+      "minimum": 50
+    },
+    "IDL-CAR-261": {
+      "unitMinor": 25800,
+      "minimum": 50
+    },
+    "IDL-CAR-033": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-100": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-CLE-046": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-HYD-400": {
+      "unitMinor": 11100,
+      "minimum": 50
+    },
+    "IDL-SAC-226": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-294": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-482": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-TEC-198": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-CLE-097": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-130": {
+      "unitMinor": 20600,
+      "minimum": 50
+    },
+    "IDL-CAR-109": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-TEC-287": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-668": {
+      "unitMinor": 14100,
+      "minimum": 50
+    },
+    "IDL-HYD-139": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-107": {
+      "unitMinor": 11400,
+      "minimum": 50
+    },
+    "IDL-ECR-291": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-136": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CAR-193": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-105": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-112": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-134": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-291": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-201": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-297": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-325": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-HYD-362": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-HYD-449": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-TEC-449": {
+      "unitMinor": 13100,
+      "minimum": 50
+    },
+    "IDL-TEC-465": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-294": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CLE-111": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-193": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-272": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-CAR-175": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-173": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-265": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-119": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-SAC-080": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-196": {
+      "unitMinor": 15600,
+      "minimum": 50
+    },
+    "IDL-TEC-148": {
+      "unitMinor": 15600,
+      "minimum": 50
+    },
+    "IDL-TEC-369": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-341": {
+      "unitMinor": 13300,
+      "minimum": 50
+    },
+    "IDL-CLE-081": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-HYD-401": {
+      "unitMinor": 17900,
+      "minimum": 50
+    },
+    "IDL-SAC-151": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-694": {
+      "unitMinor": 17000,
+      "minimum": 50
+    },
+    "IDL-SAC-657": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-TEC-197": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-212": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-129": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-CLE-115": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-170": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TRO-013": {
+      "unitMinor": 8600,
+      "minimum": 50
+    },
+    "IDL-TEC-068": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-SAC-104": {
+      "unitMinor": 14600,
+      "minimum": 50
+    },
+    "IDL-ECR-262": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CLE-157": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CAR-014": {
+      "unitMinor": 42200,
+      "minimum": 50
+    },
+    "IDL-HYD-089": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-077": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-ECR-071": {
+      "unitMinor": 100,
+      "minimum": 50
+    },
+    "IDL-ECR-036": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CAR-052": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-034": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-584": {
+      "unitMinor": 17200,
+      "minimum": 50
+    },
+    "IDL-SAC-504": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-SAC-540": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-094": {
+      "unitMinor": 13800,
+      "minimum": 50
+    },
+    "IDL-SAC-054": {
+      "unitMinor": 8500,
+      "minimum": 50
+    },
+    "IDL-SAC-689": {
+      "unitMinor": 105500,
+      "minimum": 50
+    },
+    "IDL-ECR-328": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-104": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-160": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-CAR-223": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-505": {
+      "unitMinor": 19700,
+      "minimum": 50
+    },
+    "IDL-TEC-481": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-SAC-203": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-TEC-346": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-TEC-338": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-TEC-420": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-372": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-SAC-229": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-TEC-142": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-SAC-133": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-HYD-138": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-181": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-TEC-133": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-293": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-TEC-473": {
+      "unitMinor": 13400,
+      "minimum": 50
+    },
+    "IDL-HYD-443": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-HYD-476": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-335": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-HYD-336": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-406": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-HYD-317": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-321": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-HYD-374": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-245": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-HYD-126": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-HYD-110": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-005": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-480": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-SAC-704": {
+      "unitMinor": 24800,
+      "minimum": 50
+    },
+    "IDL-CAR-276": {
+      "unitMinor": 20000,
+      "minimum": 50
+    },
+    "IDL-HYD-081": {
+      "unitMinor": 15500,
+      "minimum": 50
+    },
+    "IDL-SAC-005": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-HYD-356": {
+      "unitMinor": 11400,
+      "minimum": 50
+    },
+    "IDL-HYD-413": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-440": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-269": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-216": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-407": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-HYD-046": {
+      "unitMinor": 19900,
+      "minimum": 50
+    },
+    "IDL-TEC-106": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-460": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-323": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-434": {
+      "unitMinor": 13100,
+      "minimum": 50
+    },
+    "IDL-TEC-430": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-CAR-121": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-ECR-252": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-373": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-180": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-638": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-HYD-180": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-HYD-159": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-HYD-169": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-375": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-TEC-443": {
+      "unitMinor": 20700,
+      "minimum": 50
+    },
+    "IDL-TRO-003": {
+      "unitMinor": 21300,
+      "minimum": 50
+    },
+    "IDL-TRO-001": {
+      "unitMinor": 11600,
+      "minimum": 50
+    },
+    "IDL-TEC-032": {
+      "unitMinor": 10100,
+      "minimum": 50
+    },
+    "IDL-HYD-355": {
+      "unitMinor": 9800,
+      "minimum": 50
+    },
+    "IDL-HYD-206": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-307": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-ECR-226": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-274": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-TEC-201": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-302": {
+      "unitMinor": 11500,
+      "minimum": 50
+    },
+    "IDL-HYD-475": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-SAC-659": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-TEC-078": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-TEC-522": {
+      "unitMinor": 21800,
+      "minimum": 50
+    },
+    "IDL-SAC-692": {
+      "unitMinor": 9900,
+      "minimum": 50
+    },
+    "IDL-SAC-106": {
+      "unitMinor": 27400,
+      "minimum": 50
+    },
+    "IDL-CAR-082": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-HYD-427": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-036": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-TEC-029": {
+      "unitMinor": 20300,
+      "minimum": 50
+    },
+    "IDL-HYD-060": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-HYD-377": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-HYD-398": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-HYD-435": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-HYD-136": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-251": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-444": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-TEC-065": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-TEC-122": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-239": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-158": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-TEC-077": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-ECR-204": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-376": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-ECR-143": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-100": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-SAC-130": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-SAC-052": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-SAC-230": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-SAC-177": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-TEC-062": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-TEC-502": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-TEC-180": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-TEC-371": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-SAC-248": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-156": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-147": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-HYD-284": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-ECR-279": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-222": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-SAC-310": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-386": {
+      "unitMinor": 13700,
+      "minimum": 50
+    },
+    "IDL-TEC-273": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-163": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-086": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-089": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-TEC-453": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-ECR-009": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-323": {
+      "unitMinor": 19600,
+      "minimum": 50
+    },
+    "IDL-TEC-395": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-364": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-TEC-347": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-361": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-TEC-421": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-TEC-373": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-SAC-231": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-271": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-SAC-427": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-067": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-268": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-137": {
+      "unitMinor": 14200,
+      "minimum": 50
+    },
+    "IDL-TEC-314": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-073": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-CAR-028": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CLE-063": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-404": {
+      "unitMinor": 11500,
+      "minimum": 50
+    },
+    "IDL-SAC-398": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-408": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-507": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-HYD-242": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-TEC-284": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-SAC-344": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-107": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-176": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-662": {
+      "unitMinor": 49000,
+      "minimum": 50
+    },
+    "IDL-TEC-069": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-TEC-108": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-ECR-310": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-156": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CAR-272": {
+      "unitMinor": 12400,
+      "minimum": 50
+    },
+    "IDL-CLE-027": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CLE-031": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CLE-014": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-033": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-ECR-061": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-501": {
+      "unitMinor": 11600,
+      "minimum": 50
+    },
+    "IDL-HYD-116": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-086": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-HYD-085": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-CAR-179": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-ECR-107": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-297": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-ECR-357": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-114": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-078": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-489": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-ECR-027": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-ECR-059": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-214": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-ECR-211": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-131": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-ECR-199": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-050": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-621": {
+      "unitMinor": 16100,
+      "minimum": 50
+    },
+    "IDL-SAC-440": {
+      "unitMinor": 12000,
+      "minimum": 50
+    },
+    "IDL-CAR-285": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-SAC-480": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-SAC-635": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-SAC-326": {
+      "unitMinor": 41900,
+      "minimum": 50
+    },
+    "IDL-HYD-423": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-HYD-225": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-HYD-249": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-405": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-358": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-CAR-308": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-CLE-139": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-526": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-210": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-428": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-SAC-471": {
+      "unitMinor": 20700,
+      "minimum": 50
+    },
+    "IDL-SAC-263": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-232": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-CLE-057": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-198": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-168": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-396": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-393": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-TEC-306": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-TEC-083": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-CLE-053": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CAR-217": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-CLE-086": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-HYD-208": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-088": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-HYD-305": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-SAC-564": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-315": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-ECR-222": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-HYD-268": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-532": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-213": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-SAC-450": {
+      "unitMinor": 27100,
+      "minimum": 50
+    },
+    "IDL-TEC-102": {
+      "unitMinor": 21900,
+      "minimum": 50
+    },
+    "IDL-ECR-122": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-ECR-148": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CLE-134": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-514": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-SAC-097": {
+      "unitMinor": 17100,
+      "minimum": 50
+    },
+    "IDL-SAC-242": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-681": {
+      "unitMinor": 13000,
+      "minimum": 50
+    },
+    "IDL-SAC-164": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-HYD-008": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-050": {
+      "unitMinor": 29600,
+      "minimum": 50
+    },
+    "IDL-TEC-003": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-CLE-055": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-337": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-SAC-428": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-217": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-591": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-304": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-293": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-226": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-CAR-237": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-174": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-228": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-CLE-049": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-ECR-118": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-ECR-350": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-151": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CAR-277": {
+      "unitMinor": 22200,
+      "minimum": 50
+    },
+    "IDL-TEC-530": {
+      "unitMinor": 26200,
+      "minimum": 50
+    },
+    "IDL-HYD-234": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-HYD-503": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-493": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-048": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-HYD-084": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-618": {
+      "unitMinor": 11800,
+      "minimum": 50
+    },
+    "IDL-SAC-416": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-641": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-596": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-651": {
+      "unitMinor": 24000,
+      "minimum": 50
+    },
+    "IDL-HYD-350": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-332": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-244": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-396": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-HYD-099": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-SAC-461": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-SAC-544": {
+      "unitMinor": 11100,
+      "minimum": 50
+    },
+    "IDL-SAC-511": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-SAC-400": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-SAC-498": {
+      "unitMinor": 37900,
+      "minimum": 50
+    },
+    "IDL-HYD-344": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-HYD-484": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-CAR-291": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-055": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-CAR-251": {
+      "unitMinor": 17900,
+      "minimum": 50
+    },
+    "IDL-HYD-018": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CLE-103": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-184": {
+      "unitMinor": 9100,
+      "minimum": 50
+    },
+    "IDL-SAC-162": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-HYD-485": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-SAC-470": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-291": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-SAC-389": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-218": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-SAC-390": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-154": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-TEC-470": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-SAC-066": {
+      "unitMinor": 21500,
+      "minimum": 50
+    },
+    "IDL-TEC-096": {
+      "unitMinor": 28800,
+      "minimum": 50
+    },
+    "IDL-ECR-253": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-098": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-001": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-CAR-267": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CLE-003": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-254": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-TEC-046": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-500": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-SAC-019": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-020": {
+      "unitMinor": 12000,
+      "minimum": 50
+    },
+    "IDL-CAR-288": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-CAR-287": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-CAR-165": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-123": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-203": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-338": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-107": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-030": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-017": {
+      "unitMinor": 11400,
+      "minimum": 50
+    },
+    "IDL-CAR-038": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-SAC-029": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CAR-029": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-CAR-161": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-ECR-224": {
+      "unitMinor": 44400,
+      "minimum": 50
+    },
+    "IDL-ECR-305": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-126": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-194": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-ECR-001": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-283": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-293": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-ECR-030": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-HYD-096": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-ECR-135": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-270": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-313": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-CAR-224": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-673": {
+      "unitMinor": 16300,
+      "minimum": 50
+    },
+    "IDL-SAC-264": {
+      "unitMinor": 17400,
+      "minimum": 50
+    },
+    "IDL-SAC-667": {
+      "unitMinor": 11600,
+      "minimum": 50
+    },
+    "IDL-SAC-512": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-SAC-506": {
+      "unitMinor": 59900,
+      "minimum": 50
+    },
+    "IDL-TEC-049": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-488": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-ECR-293": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-302": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-331": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-110": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-CLE-145": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-577": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-SAC-385": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-TEC-283": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-133": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-158": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-210": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-181": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-255": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-203": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CLE-118": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-HYD-360": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-565": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-ECR-103": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-CLE-042": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-167": {
+      "unitMinor": 52700,
+      "minimum": 50
+    },
+    "IDL-CLE-047": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-202": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-085": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-CLE-098": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-SAC-602": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-TEC-200": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-147": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-SAC-353": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-646": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-184": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-448": {
+      "unitMinor": 11000,
+      "minimum": 50
+    },
+    "IDL-TEC-107": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CAR-081": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-134": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-147": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-062": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-067": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-012": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-CLE-148": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-524": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-141": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-CLE-143": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-598": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-SAC-270": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-242": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-CAR-099": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-SAC-397": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-242": {
+      "unitMinor": 46200,
+      "minimum": 50
+    },
+    "IDL-TEC-446": {
+      "unitMinor": 20100,
+      "minimum": 50
+    },
+    "IDL-CLE-076": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-091": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-ECR-326": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-074": {
+      "unitMinor": 41100,
+      "minimum": 50
+    },
+    "IDL-ECR-052": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-CAR-185": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-336": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-303": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-340": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-196": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-144": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-TEC-113": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-410": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CAR-149": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-TEC-402": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-TEC-207": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-431": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-ECR-200": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-091": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-TEC-270": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-493": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-TEC-109": {
+      "unitMinor": 14100,
+      "minimum": 50
+    },
+    "IDL-TEC-111": {
+      "unitMinor": 14200,
+      "minimum": 50
+    },
+    "IDL-TEC-244": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-TEC-296": {
+      "unitMinor": 23400,
+      "minimum": 50
+    },
+    "IDL-TEC-513": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-CAR-047": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-206": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-TEC-501": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-SAC-292": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-TEC-318": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-191": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-ECR-205": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-350": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-224": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-380": {
+      "unitMinor": 11300,
+      "minimum": 50
+    },
+    "IDL-SAC-064": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-HYD-130": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-SAC-235": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-089": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-355": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-TEC-427": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-CAR-188": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-ECR-153": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-210": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-ECR-180": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-218": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-284": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-CAR-296": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-CAR-268": {
+      "unitMinor": 6600,
+      "minimum": 50
+    },
+    "IDL-HYD-318": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-706": {
+      "unitMinor": 14200,
+      "minimum": 50
+    },
+    "IDL-CLE-104": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-510": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-SAC-124": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-288": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-179": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-246": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-124": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-189": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-109": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-447": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-384": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-HYD-373": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-071": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-142": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-CLE-065": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-245": {
+      "unitMinor": 21800,
+      "minimum": 50
+    },
+    "IDL-TEC-135": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-TEC-097": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-SAC-152": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-ECR-245": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-249": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-SAC-209": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-338": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-SAC-220": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-HYD-143": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-568": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-SAC-207": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-158": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-174": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-356": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-TEC-491": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-CAR-030": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-CAR-239": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-ECR-334": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-351": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CAR-112": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CAR-140": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-ECR-342": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-287": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-352": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-242": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-CAR-019": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-ECR-054": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-314": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-416": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-619": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-261": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CLE-132": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-HYD-256": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-CAR-295": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-267": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-236": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-HYD-198": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-182": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-301": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-400": {
+      "unitMinor": 19300,
+      "minimum": 50
+    },
+    "IDL-TEC-398": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-376": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-085": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-HYD-316": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-CAR-018": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-471": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-HYD-455": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-HYD-221": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-168": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-247": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-HYD-233": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-050": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-TEC-012": {
+      "unitMinor": 14800,
+      "minimum": 50
+    },
+    "IDL-TEC-155": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-TEC-367": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-SAC-334": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-ECR-238": {
+      "unitMinor": 38500,
+      "minimum": 50
+    },
+    "IDL-TEC-124": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-CLE-058": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-326": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-TEC-241": {
+      "unitMinor": 14500,
+      "minimum": 50
+    },
+    "IDL-SAC-543": {
+      "unitMinor": 6900,
+      "minimum": 50
+    },
+    "IDL-SAC-489": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-494": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-TEC-125": {
+      "unitMinor": 11100,
+      "minimum": 50
+    },
+    "IDL-SAC-169": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-368": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-TEC-018": {
+      "unitMinor": 29300,
+      "minimum": 50
+    },
+    "IDL-HYD-031": {
+      "unitMinor": 6300,
+      "minimum": 50
+    },
+    "IDL-SAC-576": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-SAC-087": {
+      "unitMinor": 14100,
+      "minimum": 50
+    },
+    "IDL-SAC-147": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-178": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-009": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CAR-056": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-CLE-126": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-643": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-SAC-314": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-CLE-131": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-464": {
+      "unitMinor": 28200,
+      "minimum": 50
+    },
+    "IDL-ECR-163": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-227": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-TEC-161": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-114": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-205": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-536": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-392": {
+      "unitMinor": 23300,
+      "minimum": 50
+    },
+    "IDL-TEC-301": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-CAR-075": {
+      "unitMinor": 44700,
+      "minimum": 50
+    },
+    "IDL-CLE-072": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-215": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-CAR-248": {
+      "unitMinor": 30100,
+      "minimum": 50
+    },
+    "IDL-TEC-054": {
+      "unitMinor": 14800,
+      "minimum": 50
+    },
+    "IDL-CAR-001": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-237": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-TEC-312": {
+      "unitMinor": 12500,
+      "minimum": 50
+    },
+    "IDL-SAC-333": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-ECR-239": {
+      "unitMinor": 51300,
+      "minimum": 50
+    },
+    "IDL-TEC-362": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-HYD-211": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-TEC-327": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-CLE-060": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-TEC-149": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-SAC-572": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-204": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-126": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-SAC-170": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-TEC-104": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-TEC-358": {
+      "unitMinor": 12900,
+      "minimum": 50
+    },
+    "IDL-TEC-010": {
+      "unitMinor": 27800,
+      "minimum": 50
+    },
+    "IDL-TEC-265": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-TEC-408": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-150": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-ECR-231": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-251": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-TEC-208": {
+      "unitMinor": 8100,
+      "minimum": 50
+    },
+    "IDL-SAC-435": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-SAC-357": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-TEC-337": {
+      "unitMinor": 13600,
+      "minimum": 50
+    },
+    "IDL-SAC-604": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-330": {
+      "unitMinor": 53100,
+      "minimum": 50
+    },
+    "IDL-TRO-007": {
+      "unitMinor": 22100,
+      "minimum": 50
+    },
+    "IDL-SAC-136": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-257": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-TEC-038": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-CAR-299": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-346": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-ECR-093": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-ECR-094": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-CLE-092": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-HYD-372": {
+      "unitMinor": 8200,
+      "minimum": 50
+    },
+    "IDL-SAC-146": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-TEC-295": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-609": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-303": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-SAC-406": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-225": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-288": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-170": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-160": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-149": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-ECR-117": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-ECR-278": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CLE-149": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CLE-144": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-472": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-089": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-393": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-SAC-455": {
+      "unitMinor": 17300,
+      "minimum": 50
+    },
+    "IDL-ECR-164": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-233": {
+      "unitMinor": 18200,
+      "minimum": 50
+    },
+    "IDL-CAR-094": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-102": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-TEC-231": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-TEC-397": {
+      "unitMinor": 17200,
+      "minimum": 50
+    },
+    "IDL-SAC-530": {
+      "unitMinor": 11500,
+      "minimum": 50
+    },
+    "IDL-TEC-319": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TEC-084": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-CLE-094": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-241": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-467": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-HYD-364": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-357": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-446": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-403": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-HYD-005": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-542": {
+      "unitMinor": 13400,
+      "minimum": 50
+    },
+    "IDL-SAC-417": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-585": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-SAC-437": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-SAC-663": {
+      "unitMinor": 30600,
+      "minimum": 50
+    },
+    "IDL-HYD-022": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-ECR-057": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-516": {
+      "unitMinor": 40900,
+      "minimum": 50
+    },
+    "IDL-ECR-041": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-CLE-084": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-HYD-459": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-SAC-074": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-HYD-304": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-SAC-620": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-ECR-177": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-399": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-CAR-131": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-SAC-232": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-TEC-195": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-497": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-TEC-087": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-113": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-ECR-323": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CLE-112": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-ECR-051": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-HYD-442": {
+      "unitMinor": 10200,
+      "minimum": 50
+    },
+    "IDL-HYD-421": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-456": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-220": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-409": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-HYD-103": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CLE-020": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-271": {
+      "unitMinor": 12900,
+      "minimum": 50
+    },
+    "IDL-SAC-519": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-656": {
+      "unitMinor": 6700,
+      "minimum": 50
+    },
+    "IDL-SAC-679": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-SAC-617": {
+      "unitMinor": 25600,
+      "minimum": 50
+    },
+    "IDL-CLE-034": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-431": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-HYD-474": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-235": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-HYD-457": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-CLE-022": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-CLE-001": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-HYD-380": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-378": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-HYD-250": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-HYD-319": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-HYD-290": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-HYD-264": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-HYD-289": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-TEC-030": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-CLE-071": {
+      "unitMinor": 1400,
+      "minimum": 50
+    },
+    "IDL-HYD-296": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-SAC-441": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-690": {
+      "unitMinor": 22300,
+      "minimum": 50
+    },
+    "IDL-SAC-579": {
+      "unitMinor": 4700,
+      "minimum": 50
+    },
+    "IDL-SAC-299": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-TEC-276": {
+      "unitMinor": 5400,
+      "minimum": 50
+    },
+    "IDL-SAC-342": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-375": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-147": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-SAC-637": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-073": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-100": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-ECR-277": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CLE-159": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-179": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-ECR-004": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-026": {
+      "unitMinor": 5700,
+      "minimum": 50
+    },
+    "IDL-CAR-092": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-172": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-288": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-CAR-195": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-482": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-CAR-057": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-CAR-007": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CAR-238": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-ECR-249": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-329": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-CAR-219": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-008": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-697": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-028": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-SAC-636": {
+      "unitMinor": 12800,
+      "minimum": 50
+    },
+    "IDL-SAC-475": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-SAC-460": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-SAC-642": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-057": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-CAR-178": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-344": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-ECR-191": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-286": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-104": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CAR-282": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-HYD-454": {
+      "unitMinor": 6800,
+      "minimum": 50
+    },
+    "IDL-HYD-200": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-258": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-237": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-253": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-HYD-038": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-322": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-HYD-394": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-HYD-367": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-HYD-129": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-HYD-422": {
+      "unitMinor": 8300,
+      "minimum": 50
+    },
+    "IDL-HYD-066": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-TEC-493": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-TEC-330": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-143": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-227": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-463": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-202": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-308": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-SAC-356": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-SAC-605": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-TEC-220": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-CAR-145": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-CLE-052": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-153": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TEC-401": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-TEC-507": {
+      "unitMinor": 40100,
+      "minimum": 50
+    },
+    "IDL-CAR-184": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-348": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-208": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-215": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-012": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-HYD-117": {
+      "unitMinor": 22100,
+      "minimum": 50
+    },
+    "IDL-CAR-257": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-HYD-433": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-HYD-205": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-HYD-324": {
+      "unitMinor": 7500,
+      "minimum": 50
+    },
+    "IDL-HYD-326": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-HYD-417": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-HYD-001": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-HYD-004": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-045": {
+      "unitMinor": 7900,
+      "minimum": 50
+    },
+    "IDL-TEC-015": {
+      "unitMinor": 29900,
+      "minimum": 50
+    },
+    "IDL-CAR-053": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-CAR-286": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-TEC-482": {
+      "unitMinor": 17800,
+      "minimum": 50
+    },
+    "IDL-TEC-394": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-122": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-465": {
+      "unitMinor": 40100,
+      "minimum": 50
+    },
+    "IDL-TEC-504": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TEC-424": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-SAC-496": {
+      "unitMinor": 12400,
+      "minimum": 50
+    },
+    "IDL-TEC-171": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-159": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-163": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-SAC-068": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-TRO-009": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-139": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-TEC-399": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-053": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-CAR-252": {
+      "unitMinor": 11000,
+      "minimum": 50
+    },
+    "IDL-TEC-267": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-TEC-489": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-234": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-HYD-309": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-TEC-412": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-ECR-185": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-307": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-374": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-422": {
+      "unitMinor": 13000,
+      "minimum": 50
+    },
+    "IDL-SAC-567": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-HYD-414": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-HYD-160": {
+      "unitMinor": 5600,
+      "minimum": 50
+    },
+    "IDL-HYD-170": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-444": {
+      "unitMinor": 9500,
+      "minimum": 50
+    },
+    "IDL-TEC-234": {
+      "unitMinor": 20100,
+      "minimum": 50
+    },
+    "IDL-CAR-197": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-ECR-345": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-ECR-284": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-ECR-162": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-CAR-119": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-343": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-TEC-169": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-316": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-TEC-303": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-TEC-268": {
+      "unitMinor": 4400,
+      "minimum": 50
+    },
+    "IDL-SAC-325": {
+      "unitMinor": 24300,
+      "minimum": 50
+    },
+    "IDL-CAR-162": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-SAC-376": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-SAC-117": {
+      "unitMinor": 19700,
+      "minimum": 50
+    },
+    "IDL-SAC-474": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-233": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-SAC-137": {
+      "unitMinor": 43100,
+      "minimum": 50
+    },
+    "IDL-HYD-172": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-TEC-264": {
+      "unitMinor": 9300,
+      "minimum": 50
+    },
+    "IDL-TEC-247": {
+      "unitMinor": 17900,
+      "minimum": 50
+    },
+    "IDL-TEC-525": {
+      "unitMinor": 8600,
+      "minimum": 50
+    },
+    "IDL-CAR-024": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-002": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-CAR-301": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CLE-125": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-477": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-SAC-071": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-HYD-451": {
+      "unitMinor": 19100,
+      "minimum": 50
+    },
+    "IDL-SAC-456": {
+      "unitMinor": 7800,
+      "minimum": 50
+    },
+    "IDL-TEC-189": {
+      "unitMinor": 3100,
+      "minimum": 50
+    },
+    "IDL-TEC-256": {
+      "unitMinor": 5200,
+      "minimum": 50
+    },
+    "IDL-ECR-188": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-257": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-ECR-173": {
+      "unitMinor": 10100,
+      "minimum": 50
+    },
+    "IDL-CAR-213": {
+      "unitMinor": 10500,
+      "minimum": 50
+    },
+    "IDL-TEC-255": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-ECR-109": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-311": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-CAR-069": {
+      "unitMinor": 14500,
+      "minimum": 50
+    },
+    "IDL-CAR-046": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-CAR-015": {
+      "unitMinor": 44000,
+      "minimum": 50
+    },
+    "IDL-CAR-225": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-230": {
+      "unitMinor": 35500,
+      "minimum": 50
+    },
+    "IDL-ECR-315": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-300": {
+      "unitMinor": 1000,
+      "minimum": 50
+    },
+    "IDL-CAR-232": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-612": {
+      "unitMinor": 10800,
+      "minimum": 50
+    },
+    "IDL-SAC-626": {
+      "unitMinor": 20900,
+      "minimum": 50
+    },
+    "IDL-SAC-459": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-SAC-409": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-553": {
+      "unitMinor": 22500,
+      "minimum": 50
+    },
+    "IDL-CAR-045": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-ECR-090": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-TEC-028": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-ECR-021": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-051": {
+      "unitMinor": 5500,
+      "minimum": 50
+    },
+    "IDL-HYD-280": {
+      "unitMinor": 8000,
+      "minimum": 50
+    },
+    "IDL-CAR-020": {
+      "unitMinor": 6500,
+      "minimum": 50
+    },
+    "IDL-CAR-274": {
+      "unitMinor": 5800,
+      "minimum": 50
+    },
+    "IDL-ECR-075": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-087": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-CAR-021": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-HYD-121": {
+      "unitMinor": 15100,
+      "minimum": 50
+    },
+    "IDL-TEC-370": {
+      "unitMinor": 9800,
+      "minimum": 50
+    },
+    "IDL-TEC-190": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-SAC-200": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-ECR-232": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-294": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-254": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-443": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-SAC-371": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-TEC-060": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-SAC-561": {
+      "unitMinor": 2000,
+      "minimum": 50
+    },
+    "IDL-TEC-510": {
+      "unitMinor": 18600,
+      "minimum": 50
+    },
+    "IDL-SAC-348": {
+      "unitMinor": 19900,
+      "minimum": 50
+    },
+    "IDL-SAC-128": {
+      "unitMinor": 42100,
+      "minimum": 50
+    },
+    "IDL-HYD-157": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-TEC-129": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-HYD-027": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-HYD-105": {
+      "unitMinor": 4600,
+      "minimum": 50
+    },
+    "IDL-HYD-119": {
+      "unitMinor": 23500,
+      "minimum": 50
+    },
+    "IDL-HYD-071": {
+      "unitMinor": 9700,
+      "minimum": 50
+    },
+    "IDL-ECR-039": {
+      "unitMinor": 300,
+      "minimum": 50
+    },
+    "IDL-TEC-497": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-440": {
+      "unitMinor": 57100,
+      "minimum": 50
+    },
+    "IDL-SAC-287": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-TEC-304": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-TEC-131": {
+      "unitMinor": 4500,
+      "minimum": 50
+    },
+    "IDL-TEC-211": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-CLE-108": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-238": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-CAR-154": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-573": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-SAC-186": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-HYD-167": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-HYD-173": {
+      "unitMinor": 5100,
+      "minimum": 50
+    },
+    "IDL-TEC-151": {
+      "unitMinor": 9200,
+      "minimum": 50
+    },
+    "IDL-TEC-365": {
+      "unitMinor": 16400,
+      "minimum": 50
+    },
+    "IDL-SAC-551": {
+      "unitMinor": 12800,
+      "minimum": 50
+    },
+    "IDL-SAC-523": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-478": {
+      "unitMinor": 6100,
+      "minimum": 50
+    },
+    "IDL-SAC-354": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-CAR-010": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-SAC-012": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-SAC-046": {
+      "unitMinor": 26000,
+      "minimum": 50
+    },
+    "IDL-SAC-425": {
+      "unitMinor": 12500,
+      "minimum": 50
+    },
+    "IDL-SAC-593": {
+      "unitMinor": 2500,
+      "minimum": 50
+    },
+    "IDL-SAC-628": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-SAC-623": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-006": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-SAC-027": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-SAC-028": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-041": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-HYD-097": {
+      "unitMinor": 13300,
+      "minimum": 50
+    },
+    "IDL-HYD-090": {
+      "unitMinor": 10000,
+      "minimum": 50
+    },
+    "IDL-HYD-104": {
+      "unitMinor": 13600,
+      "minimum": 50
+    },
+    "IDL-ECR-171": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-250": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-TEC-520": {
+      "unitMinor": 18700,
+      "minimum": 50
+    },
+    "IDL-ECR-201": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-126": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-CLE-155": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-622": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-SAC-118": {
+      "unitMinor": 2400,
+      "minimum": 50
+    },
+    "IDL-CLE-137": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-640": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-TEC-185": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-368": {
+      "unitMinor": 1100,
+      "minimum": 50
+    },
+    "IDL-ECR-136": {
+      "unitMinor": 2200,
+      "minimum": 50
+    },
+    "IDL-SAC-110": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-ECR-317": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-TEC-439": {
+      "unitMinor": 10900,
+      "minimum": 50
+    },
+    "IDL-TEC-290": {
+      "unitMinor": 10300,
+      "minimum": 50
+    },
+    "IDL-TEC-090": {
+      "unitMinor": 43200,
+      "minimum": 50
+    },
+    "IDL-ECR-298": {
+      "unitMinor": 1800,
+      "minimum": 50
+    },
+    "IDL-CAR-169": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-022": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-ECR-060": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-025": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-HYD-015": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-SAC-599": {
+      "unitMinor": 13100,
+      "minimum": 50
+    },
+    "IDL-SAC-309": {
+      "unitMinor": 2300,
+      "minimum": 50
+    },
+    "IDL-SAC-072": {
+      "unitMinor": 5900,
+      "minimum": 50
+    },
+    "IDL-SAC-578": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-HYD-098": {
+      "unitMinor": 10400,
+      "minimum": 50
+    },
+    "IDL-HYD-115": {
+      "unitMinor": 3800,
+      "minimum": 50
+    },
+    "IDL-HYD-003": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-SAC-608": {
+      "unitMinor": 16600,
+      "minimum": 50
+    },
+    "IDL-SAC-369": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-462": {
+      "unitMinor": 13200,
+      "minimum": 50
+    },
+    "IDL-SAC-285": {
+      "unitMinor": 7700,
+      "minimum": 50
+    },
+    "IDL-HYD-069": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-SAC-527": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-SAC-458": {
+      "unitMinor": 17600,
+      "minimum": 50
+    },
+    "IDL-SAC-632": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-514": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-SAC-610": {
+      "unitMinor": 20100,
+      "minimum": 50
+    },
+    "IDL-SAC-699": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-ECR-360": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-CAR-263": {
+      "unitMinor": 7200,
+      "minimum": 50
+    },
+    "IDL-SAC-703": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-TEC-024": {
+      "unitMinor": 17600,
+      "minimum": 50
+    },
+    "IDL-HYD-122": {
+      "unitMinor": 25500,
+      "minimum": 50
+    },
+    "IDL-CAR-298": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-SAC-382": {
+      "unitMinor": 8900,
+      "minimum": 50
+    },
+    "IDL-SAC-552": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-SAC-313": {
+      "unitMinor": 4900,
+      "minimum": 50
+    },
+    "IDL-SAC-484": {
+      "unitMinor": 1600,
+      "minimum": 50
+    },
+    "IDL-SAC-037": {
+      "unitMinor": 15400,
+      "minimum": 50
+    },
+    "IDL-SAC-165": {
+      "unitMinor": 18700,
+      "minimum": 50
+    },
+    "IDL-HYD-044": {
+      "unitMinor": 7600,
+      "minimum": 50
+    },
+    "IDL-CAR-290": {
+      "unitMinor": 7000,
+      "minimum": 50
+    },
+    "IDL-HYD-007": {
+      "unitMinor": 3600,
+      "minimum": 50
+    },
+    "IDL-ECR-055": {
+      "unitMinor": 200,
+      "minimum": 50
+    },
+    "IDL-HYD-101": {
+      "unitMinor": 20000,
+      "minimum": 50
+    },
+    "IDL-HYD-135": {
+      "unitMinor": 1300,
+      "minimum": 50
+    },
+    "IDL-HYD-030": {
+      "unitMinor": 6000,
+      "minimum": 50
+    },
+    "IDL-CAR-234": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-ECR-243": {
+      "unitMinor": 37300,
+      "minimum": 50
+    },
+    "IDL-ECR-316": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-272": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-167": {
+      "unitMinor": 500,
+      "minimum": 50
+    },
+    "IDL-HYD-349": {
+      "unitMinor": 3900,
+      "minimum": 50
+    },
+    "IDL-HYD-302": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-HYD-134": {
+      "unitMinor": 2700,
+      "minimum": 50
+    },
+    "IDL-HYD-230": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-SAC-701": {
+      "unitMinor": 2600,
+      "minimum": 50
+    },
+    "IDL-HYD-014": {
+      "unitMinor": 7400,
+      "minimum": 50
+    },
+    "IDL-HYD-127": {
+      "unitMinor": 4100,
+      "minimum": 50
+    },
+    "IDL-TRO-006": {
+      "unitMinor": 15300,
+      "minimum": 50
+    },
+    "IDL-HYD-193": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-HYD-166": {
+      "unitMinor": 4200,
+      "minimum": 50
+    },
+    "IDL-CAR-103": {
+      "unitMinor": 3200,
+      "minimum": 50
+    },
+    "IDL-ECR-358": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-ECR-258": {
+      "unitMinor": 900,
+      "minimum": 50
+    },
+    "IDL-ECR-213": {
+      "unitMinor": 400,
+      "minimum": 50
+    },
+    "IDL-CAR-115": {
+      "unitMinor": 1500,
+      "minimum": 50
+    },
+    "IDL-TEC-035": {
+      "unitMinor": 8800,
+      "minimum": 50
+    },
+    "IDL-TEC-475": {
+      "unitMinor": 9000,
+      "minimum": 50
+    },
+    "IDL-TEC-378": {
+      "unitMinor": 28300,
+      "minimum": 50
+    },
+    "IDL-SAC-145": {
+      "unitMinor": 1700,
+      "minimum": 50
+    },
+    "IDL-ECR-234": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-TEC-436": {
+      "unitMinor": 4300,
+      "minimum": 50
+    },
+    "IDL-SAC-201": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-TEC-313": {
+      "unitMinor": 6400,
+      "minimum": 50
+    },
+    "IDL-SAC-380": {
+      "unitMinor": 8400,
+      "minimum": 50
+    },
+    "IDL-TEC-203": {
+      "unitMinor": 3700,
+      "minimum": 50
+    },
+    "IDL-SAC-639": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-SAC-336": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-SAC-158": {
+      "unitMinor": 1200,
+      "minimum": 50
+    },
+    "IDL-HYD-175": {
+      "unitMinor": 3500,
+      "minimum": 50
+    },
+    "IDL-TEC-360": {
+      "unitMinor": 8700,
+      "minimum": 50
+    },
+    "IDL-TEC-469": {
+      "unitMinor": 15400,
+      "minimum": 50
+    },
+    "IDL-CAR-255": {
+      "unitMinor": 9600,
+      "minimum": 50
+    },
+    "IDL-HYD-058": {
+      "unitMinor": 7100,
+      "minimum": 50
+    },
+    "IDL-ECR-271": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-ECR-145": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-ECR-124": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-CAR-176": {
+      "unitMinor": 2100,
+      "minimum": 50
+    },
+    "IDL-CAR-280": {
+      "unitMinor": 2800,
+      "minimum": 50
+    },
+    "IDL-CAR-281": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-547": {
+      "unitMinor": 10600,
+      "minimum": 50
+    },
+    "IDL-SAC-244": {
+      "unitMinor": 20800,
+      "minimum": 50
+    },
+    "IDL-SAC-645": {
+      "unitMinor": 5000,
+      "minimum": 50
+    },
+    "IDL-SAC-452": {
+      "unitMinor": 1900,
+      "minimum": 50
+    },
+    "IDL-HYD-021": {
+      "unitMinor": 2900,
+      "minimum": 50
+    },
+    "IDL-HYD-158": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-TRO-015": {
+      "unitMinor": 14300,
+      "minimum": 50
+    },
+    "IDL-TEC-511": {
+      "unitMinor": 56600,
+      "minimum": 50
+    },
+    "IDL-SAC-045": {
+      "unitMinor": 37500,
+      "minimum": 50
+    },
+    "IDL-SAC-043": {
+      "unitMinor": 58400,
+      "minimum": 50
+    },
+    "IDL-SAC-457": {
+      "unitMinor": 16000,
+      "minimum": 50
+    },
+    "IDL-SAC-414": {
+      "unitMinor": 13800,
+      "minimum": 50
+    },
+    "IDL-SAC-539": {
+      "unitMinor": 10700,
+      "minimum": 50
+    },
+    "IDL-SAC-500": {
+      "unitMinor": 7300,
+      "minimum": 50
+    },
+    "IDL-SAC-682": {
+      "unitMinor": 45000,
+      "minimum": 50
+    },
+    "IDL-TEC-498": {
+      "unitMinor": 17100,
+      "minimum": 50
+    },
+    "IDL-TEC-474": {
+      "unitMinor": 3300,
+      "minimum": 50
+    },
+    "IDL-SAC-204": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-SAC-466": {
+      "unitMinor": 4000,
+      "minimum": 50
+    },
+    "IDL-TEC-300": {
+      "unitMinor": 3400,
+      "minimum": 50
+    },
+    "IDL-TEC-271": {
+      "unitMinor": 600,
+      "minimum": 50
+    },
+    "IDL-CAR-174": {
+      "unitMinor": 3000,
+      "minimum": 50
+    },
+    "IDL-TEC-172": {
+      "unitMinor": 800,
+      "minimum": 50
+    },
+    "IDL-SAC-367": {
+      "unitMinor": 9400,
+      "minimum": 50
+    },
+    "IDL-SAC-084": {
+      "unitMinor": 4800,
+      "minimum": 50
+    },
+    "IDL-TEC-059": {
+      "unitMinor": 22100,
+      "minimum": 50
+    },
+    "IDL-CAR-117": {
+      "unitMinor": 700,
+      "minimum": 50
+    },
+    "IDL-TEC-146": {
+      "unitMinor": 20700,
+      "minimum": 50
+    },
+    "IDL-TEC-243": {
+      "unitMinor": 5300,
+      "minimum": 50
+    },
+    "IDL-HYD-080": {
+      "unitMinor": 10300,
+      "minimum": 50
+    }
+  }
+}

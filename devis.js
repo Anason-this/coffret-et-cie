@@ -7,11 +7,12 @@
   const maximum = /* maximum */ 1000000;
   const formatQuantity = new Intl.NumberFormat('fr-MA').format;
   const validQuantity = n => Number.isSafeInteger(n) && n >= minimum && n <= maximum;
-  const unitPrice = (item, quantity) =>
-    item.prices?.tiers.find(tier => tier.through === null || quantity <= tier.through)?.unitMinor ?? null;
-  const money = (minor, currency) => new Intl.NumberFormat('fr-MA', {
-    style: 'currency', currency,
-  }).format(minor / 100);
+  const unitPrice = item => Number.isSafeInteger(item.unitPriceMinor) && item.unitPriceMinor > 0
+    ? item.unitPriceMinor : null;
+  const formatMoney = new Intl.NumberFormat('fr-MA', {
+    style: 'currency', currency: 'MAD', minimumFractionDigits: 2,
+  }).format;
+  const money = minor => formatMoney(minor / 100);
   const confirmation = 'Disponibilité, marquage, livraison et montant définitif à confirmer.';
   const storageError = 'Impossible d’enregistrer la sélection dans ce navigateur.';
 
@@ -80,12 +81,6 @@
     const product = JSON.parse(add.dataset.item);
     const input = add.elements.quantity;
     const status = document.querySelector('#quote-add-status');
-    const label = document.querySelector('#quote-unit-price');
-    input.addEventListener('input', () => {
-      const price = unitPrice(product, input.valueAsNumber);
-      label.textContent = price === null || !validQuantity(input.valueAsNumber)
-        ? 'Prix sur devis' : money(price, product.prices.currency) + ' / pièce';
-    });
     add.addEventListener('submit', event => {
       event.preventDefault();
       const quantity = input.valueAsNumber;
@@ -125,7 +120,11 @@
   const create = page.querySelector('#quote-create');
   const quoteDocument = page.querySelector('#quote-document');
   const share = page.querySelector('#quote-share');
-  const selectionsKey = items => JSON.stringify(items.map(({ id, quantity }) => [id, quantity]));
+  const currentPrices = JSON.parse(page.querySelector('#quote-price-index').textContent);
+  const readPriced = () => read().map(item => ({
+    ...item, unitPriceMinor: Object.hasOwn(currentPrices, item.sku) ? currentPrices[item.sku] : null,
+  }));
+  const selectionsKey = items => JSON.stringify(items.map(({ id, quantity, unitPriceMinor }) => [id, quantity, unitPriceMinor]));
   const contactNote = page.querySelector('#quote-contact-note');
   const email = page.querySelector('#quote-email');
   const whatsapp = page.querySelector('#quote-whatsapp');
@@ -176,11 +175,10 @@
     const tbody = page.querySelector('#document-lines');
     tbody.replaceChildren();
     for (const item of items) {
-      const unit = unitPrice(item, item.quantity);
-      const currency = item.prices?.currency;
+      const unit = unitPrice(item);
       const row = document.createElement('tr');
       for (const value of [item.name + ' · ' + item.sku, formatQuantity(item.quantity),
-        unit === null ? '—' : money(unit, currency), unit === null ? 'Sur devis' : money(unit * item.quantity, currency)]) {
+        unit === null ? '—' : money(unit), unit === null ? 'Sur devis' : money(unit * item.quantity)]) {
         const cell = document.createElement('td');
         cell.textContent = value;
         row.append(cell);
@@ -192,25 +190,24 @@
   }
 
   function render() {
-    const items = read();
+    const items = readPriced();
     summary.hidden = items.length === 0;
     page.querySelector('#quote-empty').hidden = items.length !== 0;
     list.replaceChildren();
     if (!items.length) return;
-    const totals = new Map();
+    let subtotal = 0;
     let unknown = 0;
     let pieces = 0;
     const details = [];
 
     for (const item of items) {
-      const unit = unitPrice(item, item.quantity);
-      const currency = item.prices?.currency;
-      const cost = unit === null ? 'Prix sur devis' : money(unit * item.quantity, currency);
+      const unit = unitPrice(item);
+      const cost = unit === null ? 'Prix sur devis' : money(unit * item.quantity);
       if (unit === null) unknown++;
-      else totals.set(currency, (totals.get(currency) ?? 0) + unit * item.quantity);
+      else subtotal += unit * item.quantity;
       pieces += item.quantity;
       details.push('• ' + item.name + ' (' + item.sku + ') — ' + formatQuantity(item.quantity) + ' pièces'
-        + (unit === null ? '' : ' × ' + money(unit, currency) + ' = ' + cost));
+        + (unit === null ? '' : ' × ' + money(unit) + ' = ' + cost));
 
       const row = lineTemplate.content.cloneNode(true);
       const link = row.querySelector('.quote-line-name');
@@ -231,7 +228,7 @@
       list.append(row);
     }
 
-    const quoted = [...totals].map(([currency, amount]) => money(amount, currency)).join(' + ');
+    const quoted = subtotal ? money(subtotal) : '';
     const estimate = quoted ? quoted + (unknown ? ' (partiel)' : '') : 'Sur devis';
     page.querySelector('#quote-total').textContent = formatQuantity(pieces);
     page.querySelector('#quote-money').textContent = estimate;
@@ -242,7 +239,7 @@
     const contacts = recipient();
     renderDocument(draft, items, pieces, estimate, contacts);
     const totalLines = ['Total : ' + formatQuantity(pieces) + ' pièces'];
-    if (quoted) totalLines.push('Estimation articles : ' + estimate);
+    if (quoted) totalLines.push('Estimation articles TTC : ' + estimate);
     message.value = ['Bonjour Coffret & Cie,', 'Demande de devis : ' + draft.reference,
       ...(contacts.length ? ['Destinataire : ' + contacts.join(' · ')] : []), 'Je souhaite recevoir un devis pour les références suivantes :',
       '', ...details, '', ...totalLines, confirmation, '', 'Merci !'].join('\n');
@@ -281,7 +278,7 @@
   });
   create.addEventListener('submit', event => {
     event.preventDefault();
-    const items = read();
+    const items = readPriced();
     if (!items.length) return;
     try {
       if (!readDraft(items)) localStorage.setItem(draftKey, JSON.stringify(newDraft(items)));

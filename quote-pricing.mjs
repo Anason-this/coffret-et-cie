@@ -1,25 +1,18 @@
 export const minimumQuantity = 50;
 export const maximumQuantity = 1000000;
-const currencies = new Set(['EUR', 'MAD']);
 
-export function markedUpPrices(config, products) {
-  const catalogSkus = new Set(products.map(product => product.sku));
-  return new Map(Object.entries(config).map(([sku, entry]) => {
-    const { supplierRef, currency, tiers } = entry;
-    if (!catalogSkus.has(sku) || typeof supplierRef !== 'string' || !supplierRef.trim()
-      || !currencies.has(currency) || !Array.isArray(tiers) || !tiers.length) {
-      throw new Error('Invalid Makito price mapping for ' + sku);
+export function markedUpIdeloPrices(snapshot, products) {
+  const { currency, basis, pricesBySku } = snapshot;
+  if (currency !== 'MAD' || basis !== 'TTC sans marquage' || !pricesBySku
+    || Object.keys(pricesBySku).length !== products.length) {
+    throw new Error('Idelo price snapshot does not cover the full catalog');
+  }
+  return new Map(products.map(({ sku }) => {
+    const price = Object.hasOwn(pricesBySku, sku) ? pricesBySku[sku] : null;
+    if (!price || price.minimum !== minimumQuantity || (price.unitMinor !== null
+      && (!Number.isSafeInteger(price.unitMinor) || price.unitMinor <= 0 || price.unitMinor > 100000000))) {
+      throw new Error('Missing or invalid Idelo unit price for ' + sku);
     }
-    let previousLimit = 0;
-    const adjusted = tiers.map(({ through, unitMinor }, index) => {
-      const validLimit = through === null ? index === tiers.length - 1
-        : Number.isSafeInteger(through) && through > previousLimit;
-      if (!validLimit || !Number.isSafeInteger(unitMinor) || unitMinor <= 0 || unitMinor > 100000000) {
-        throw new Error('Invalid Makito price tier for ' + sku);
-      }
-      previousLimit = through;
-      return { through, unitMinor: Math.floor((unitMinor * 6 + 2) / 5) };
-    });
-    return [sku, { currency, tiers: adjusted }];
+    return [sku, price.unitMinor === null ? null : Math.floor((price.unitMinor * 6 + 2) / 5)];
   }));
 }

@@ -25,6 +25,8 @@ export const colorName = key => colorMap[key]?.[0] ?? key.replaceAll('-', ' ');
 export const productPath = p => '/produits/' + p.id + '/';
 export const familyPath = id => '/collections/' + id + '/';
 export const pageSize = 24;
+const mad = new Intl.NumberFormat('fr-MA', { style: 'currency', currency: 'MAD', minimumFractionDigits: 2 });
+export const unitPriceLabel = unitMinor => unitMinor === null ? 'Prix sur devis' : mad.format(unitMinor / 100) + ' TTC / pièce';
 
 export function picture(p, lazy = true) {
   return `<img class="product-photo" src="${escape(p.photo)}" width="400" height="400" alt="${escape(p.name + ' · ' + p.type)}" referrerpolicy="no-referrer" decoding="async"${lazy ? ' loading="lazy"' : ''}>`;
@@ -45,5 +47,6 @@ export function stock(p) {
 export function card(p) {
   return `<article class="card" data-product><a href="${productPath(p)}" class="photo-link">${picture(p)}<span class="photo-arrow" aria-hidden="true">↗</span></a>
     <div class="card-body"><p class="ref">${escape(p.sku)} <span>·</span> ${escape(p.type)}</p>
-    <h3><a href="${productPath(p)}">${escape(p.name)}</a></h3>${swatches(p)}${stock(p)}</div></article>`;
+    <h3><a href="${productPath(p)}">${escape(p.name)}</a></h3>
+    <p class="quote-price">${escape(unitPriceLabel(p.unitPriceMinor))}</p>${swatches(p)}${stock(p)}</div></article>`;
 }
