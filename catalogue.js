@@ -19,7 +19,7 @@ if (grid) {
   let currentPage = 1;
 
   function getCatalog() {
-    catalog ??= fetch('/catalogue-data.json').then(response => {
+    catalog ??= fetch('/catalogue-data-full.json').then(response => {
       if (!response.ok) throw new Error('Catalogue indisponible');
       return response.json();
     }).catch(error => {

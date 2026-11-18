@@ -22,7 +22,7 @@ function layout({ title, description, path, body }) {
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/style.css"><script src="/catalogue.js" type="module"></script></head>
+  <link rel="stylesheet" href="/catalogue-full.css"><script src="/catalogue-full.js" type="module"></script></head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
   <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form></div>
@@ -76,7 +76,10 @@ for (const p of products) {
     <a class="button" href="${familyPath(p.family)}">Voir la collection</a></div></article></div>` }));
 }
 
-for (const file of ['style.css', 'catalogue.js', 'cards.mjs']) await copyFile(new URL(file, root), new URL(file, output));
-await writeFile(new URL('catalogue-data.json', output), JSON.stringify(products));
+await copyFile(new URL('style.css', root), new URL('catalogue-full.css', output));
+await copyFile(new URL('cards.mjs', root), new URL('cards-full.js', output));
+const browserScript = await readFile(new URL('catalogue.js', root), 'utf8');
+await writeFile(new URL('catalogue-full.js', output), browserScript.replace('./cards.mjs', './cards-full.js'));
+await writeFile(new URL('catalogue-data-full.json', output), JSON.stringify(products));
 await writeFile(new URL('robots.txt', output), 'User-agent: *\nAllow: /\n');
 console.log('Built ' + products.length + ' product pages across ' + (groups.length - 1) + ' families.');
