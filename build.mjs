@@ -26,25 +26,52 @@ const links = Object.entries(familyNames).map(([id, name]) => '<a href="' + fami
 const date = new Intl.DateTimeFormat('fr-MA', { dateStyle: 'long', timeZone: 'Africa/Casablanca' }).format(new Date(snapshot.importedAt));
 const stockNote = 'Stock indicatif tiré du catalogue Idelo consulté le ' + date + '. Disponibilité à confirmer.';
 const pagePath = (family, page) => (family ? familyPath(family) : '/') + (page === 1 ? '' : 'page/' + page + '/');
+const phone = quoteConfig.whatsapp ? '+' + quoteConfig.whatsapp.replace(/^\+/, '') : '';
+const phoneLabel = phone.replace(/^(\+212)(\d{3})(\d{3})(\d{3})$/, '$1 $2 $3 $4');
+const emailHref = 'mailto:' + quoteConfig.email;
+const whatsappHref = 'https://wa.me/' + phone.slice(1);
+
+const icons = {
+  phone: '<path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-1.8 2a14 14 0 0 1-7.2-7.2L9 8l-2-5Z"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+  quote: '<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9Zm0 0v7h7M8 13h8m-8 4h6"/>',
+  whatsapp: '<path d="M5.5 18.2 4 21l3.6-1a8.5 8.5 0 1 0-2.1-1.8Z"/><path d="M9.4 8.5c-.7-.3-1.7.3-1.5 1.4.4 2.7 2.8 5 5.2 5.7 1.3.4 2.6-.5 2.4-1.3-.1-.4-1.7-1.3-2-1.3-.4 0-.5.7-.9.8-.8-.1-2.7-1.7-2.9-2.5 0-.4.6-.7.5-1.1-.1-.5-.5-1.6-.8-1.7Z"/>',
+};
+const icon = name => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + icons[name] + '</svg>';
+const headerContacts = [
+  phone ? `<a href="tel:${escape(phone)}">${icon('phone')}<span>${escape(phoneLabel)}</span></a>` : '',
+  quoteConfig.email ? `<a href="${escape(emailHref)}">${icon('mail')}<span>${escape(quoteConfig.email)}</span></a>` : '',
+].join('');
+const floatingContacts = [
+  phone ? `<a class="contact-shortcut contact-whatsapp" href="${escape(whatsappHref)}" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp" title="WhatsApp">${icon('whatsapp')}</a>` : '',
+  quoteConfig.email ? `<a class="contact-shortcut contact-mail" href="${escape(emailHref)}" aria-label="Nous écrire par e-mail" title="E-mail">${icon('mail')}</a>` : '',
+].join('');
 
 function layout({ title, description, path, body, catalogScript = false }) {
   return `<!doctype html><html lang="fr-MA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><script src="/devis-prices.js" defer></script>
+  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v1.css"><script src="/devis-prices.js" defer></script>
   ${catalogScript ? '<script src="/catalogue-priced.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
-  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form><a class="quote-nav" href="/devis/">Mon devis <span data-quote-count hidden>0</span></a></div>
+  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form>
+  <div class="mast-actions">
+    ${headerContacts ? `<div class="header-contacts" aria-label="Coordonnées">${headerContacts}</div>` : ''}
+    <a class="quote-nav" href="/devis/"${path === '/devis/' ? ' aria-current="page"' : ''}>${icon('quote')} Mon devis <span data-quote-count hidden>0</span></a>
+  </div></div>
   <nav class="wrap nav" aria-label="Catégories"><a href="/">Catalogue</a>${links}</nav></header>
   <main id="contenu">${body}</main>
+  <div class="contact-dock">
   ${path === '/devis/' ? '' : `<aside class="quote-tray" id="quote-tray" aria-label="Sélection pour le devis" hidden>
     <button class="tray-toggle" id="tray-toggle" type="button" aria-controls="tray-content" aria-expanded="false">
       <span>Mon devis <span class="tray-badge" id="tray-count"></span></span><span class="tray-chevron" aria-hidden="true">⌃</span>
     </button>
     <div id="tray-content" class="tray-content" hidden><ul id="tray-lines"></ul><div class="tray-footer"><strong id="tray-total"></strong><a class="button" href="/devis/">Voir mon devis →</a></div></div>
   </aside>`}
+  ${floatingContacts ? `<nav class="floating-contacts" aria-label="Contact rapide">${floatingContacts}</nav>` : ''}
+  </div>
   <footer><div class="wrap footer"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Catalogue · Maroc</p></div></footer></body></html>`;
 }
 
@@ -161,6 +188,7 @@ for (const sheet of ['catalogue-full-v2.css', 'catalogue-full.css']) {
 await mkdir(new URL('img/', output), { recursive: true });
 await copyFile(new URL('img/novagift-logo.png', root), new URL('img/novagift-logo.png', output));
 await copyFile(new URL('devis.css', root), new URL('devis-v2.css', output));
+await copyFile(new URL('header-contact.css', root), new URL('header-contact-v1.css', output));
 const quoteScript = await readFile(new URL('devis.js', root), 'utf8');
 await writeFile(new URL('devis-prices.js', output), quoteScript
   .replace('/* minimum */ 50', String(minimumQuantity))
