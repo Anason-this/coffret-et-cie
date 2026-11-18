@@ -30,12 +30,13 @@ const phone = quoteConfig.whatsapp ? '+' + quoteConfig.whatsapp.replace(/^\+/, '
 const phoneLabel = phone.replace(/^(\+212)(\d{3})(\d{3})(\d{3})$/, '$1 $2 $3 $4');
 const emailHref = 'mailto:' + quoteConfig.email;
 const whatsappHref = 'https://wa.me/' + phone.slice(1);
+const pdfFileName = 'Goodisly-Novagift-2027-Catalogue-General.pdf';
+const pdfHref = '/catalogues/' + pdfFileName;
 
 const icons = {
   phone: '<path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-1.8 2a14 14 0 0 1-7.2-7.2L9 8l-2-5Z"/>',
   mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
   quote: '<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9Zm0 0v7h7M8 13h8m-8 4h6"/>',
-  whatsapp: '<path d="M5.5 18.2 4 21l3.6-1a8.5 8.5 0 1 0-2.1-1.8Z"/><path d="M9.4 8.5c-.7-.3-1.7.3-1.5 1.4.4 2.7 2.8 5 5.2 5.7 1.3.4 2.6-.5 2.4-1.3-.1-.4-1.7-1.3-2-1.3-.4 0-.5.7-.9.8-.8-.1-2.7-1.7-2.9-2.5 0-.4.6-.7.5-1.1-.1-.5-.5-1.6-.8-1.7Z"/>',
 };
 const icon = name => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + icons[name] + '</svg>';
 const headerContacts = [
@@ -43,7 +44,7 @@ const headerContacts = [
   quoteConfig.email ? `<a href="${escape(emailHref)}">${icon('mail')}<span>${escape(quoteConfig.email)}</span></a>` : '',
 ].join('');
 const floatingContacts = [
-  phone ? `<a class="contact-shortcut contact-whatsapp" href="${escape(whatsappHref)}" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp" title="WhatsApp">${icon('whatsapp')}</a>` : '',
+  phone ? `<a class="contact-shortcut contact-whatsapp" href="${escape(whatsappHref)}" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp" title="WhatsApp"><img src="/img/whatsapp-official.svg" width="27" height="27" alt=""></a>` : '',
   quoteConfig.email ? `<a class="contact-shortcut contact-mail" href="${escape(emailHref)}" aria-label="Nous écrire par e-mail" title="E-mail">${icon('mail')}</a>` : '',
 ].join('');
 
@@ -52,7 +53,7 @@ function layout({ title, description, path, body, catalogScript = false }) {
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v1.css"><script src="/devis-prices.js" defer></script>
+  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v2.css"><script src="/devis-prices.js" defer></script>
   ${catalogScript ? '<script src="/catalogue-priced.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
@@ -61,7 +62,9 @@ function layout({ title, description, path, body, catalogScript = false }) {
     ${headerContacts ? `<div class="header-contacts" aria-label="Coordonnées">${headerContacts}</div>` : ''}
     <a class="quote-nav" href="/devis/"${path === '/devis/' ? ' aria-current="page"' : ''}>${icon('quote')} Mon devis <span data-quote-count hidden>0</span></a>
   </div></div>
-  <nav class="wrap nav" aria-label="Catégories"><a href="/">Catalogue</a>${links}</nav></header>
+  <nav class="wrap nav" aria-label="Catégories et catalogue"><a href="/">Catalogue</a>${links}
+    <a class="nav-pdf" href="/catalogue-pdf/"${path === '/catalogue-pdf/' ? ' aria-current="page"' : ''}>${icon('quote')} Catalogue PDF</a>
+  </nav></header>
   <main id="contenu">${body}</main>
   <div class="contact-dock">
   ${path === '/devis/' ? '' : `<aside class="quote-tray" id="quote-tray" aria-label="Sélection pour le devis" hidden>
@@ -84,7 +87,9 @@ function catalog(items, family, page) {
   const typeKeys = [...new Set(items.map(p => p.type))].sort((a, b) => a.localeCompare(b, 'fr'));
   const options = (values, label = value => value) => values.map(value => '<option value="' + escape(value) + '">' + escape(label(value)) + '</option>').join('');
   return layout({ title: title + (page > 1 ? ' · Page ' + page : ''), description, path: pagePath(family, page), catalogScript: true, body: `
-    <section class="intro"><div class="wrap"><p class="eyebrow">CADEAUX D’ENTREPRISE · MAROC</p><h1>${escape(title)}</h1><p>${escape(description)}</p></div></section>
+    <section class="intro"><div class="wrap"><p class="eyebrow">CADEAUX D’ENTREPRISE · MAROC</p><h1>${escape(title)}</h1><p>${escape(description)}</p>
+      ${!family && page === 1 ? `<a class="button catalogue-callout" href="/catalogue-pdf/">${icon('quote')} Voir le catalogue PDF</a>` : ''}
+    </div></section>
     <div class="wrap catalog"><aside aria-label="Filtres"><h2>Affiner</h2><nav class="family-links" aria-label="Familles de produits"><a href="/">Tous les produits</a>${links}</nav>
     <form id="filters"><fieldset><legend>Couleur</legend><select name="color" aria-label="Filtrer par couleur"><option value="">Toutes</option>${options(colorKeys, colorName)}</select></fieldset>
     <fieldset><legend>Type de produit</legend><select name="type" aria-label="Filtrer par type"><option value="">Tous</option>${options(typeKeys)}</select></fieldset>
@@ -117,6 +122,9 @@ for (const p of products) {
   await save(productPath(p), layout({ title: seo.title, description: seo.meta, path: productPath(p), body: `
     <div class="wrap detail-wrap"><nav aria-label="Fil d’Ariane" class="crumb"><a href="/">Catalogue</a> / <a href="${familyPath(p.family)}">${escape(familyNames[p.family])}</a> / <span>${escape(p.name)}</span></nav>
     <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><p class="eyebrow">${escape(p.sku)}</p><h1>${escape(p.name)}</h1>
+    <div class="product-price"><p class="quote-price" id="quote-unit-price">${escape(initialLabel)}</p>
+      <p>${p.unitPriceMinor === null ? 'Demandez un devis dès ' + minimumQuantity + ' pièces.' : 'Dès ' + minimumQuantity + ' pièces · hors marquage et livraison'}</p>
+    </div>
     <section class="product-description" aria-labelledby="product-description-title">
       <h2 id="product-description-title">${escape(seo.label.replace(/^./u, char => char.toLocaleUpperCase('fr')))} avec logo</h2>
       ${seo.copy.map(paragraph => '<p>' + escape(paragraph) + '</p>').join('')}
@@ -124,8 +132,6 @@ for (const p of products) {
     </section>
     <h2>Coloris</h2>${swatches(p, true)}<h2>Disponibilité indicative</h2>${stock(p)}<p class="demo">${stockNote}</p>
     <section class="quote-product" aria-labelledby="quote-product-title"><h2 id="quote-product-title">Votre quantité</h2>
-      <p class="quote-price" id="quote-unit-price">${escape(initialLabel)}</p>
-      <p class="demo">Prix de l’article seul, hors marquage et livraison.</p>
       <form id="quote-add" data-item="${escape(JSON.stringify({ id: p.id, sku: p.sku, name: p.name, unitPriceMinor: p.unitPriceMinor }))}">
         <label for="quote-quantity">Pièces <small>(min. ${minimumQuantity})</small></label>
         <input id="quote-quantity" name="quantity" type="number" inputmode="numeric" required min="${minimumQuantity}" max="${maximumQuantity}" step="1" value="${minimumQuantity}">
@@ -135,6 +141,21 @@ for (const p of products) {
     </section>
     <a class="collection-back" href="${familyPath(p.family)}">Voir la collection</a></div></article></div>` }));
 }
+
+await save('/catalogue-pdf/', layout({
+  title: 'Catalogue Novagift 2027', description: 'Consultez ou téléchargez le catalogue général Novagift 2027 au format PDF.', path: '/catalogue-pdf/',
+  body: `<section class="wrap pdf-catalogue" aria-labelledby="pdf-catalogue-title">
+    <img class="pdf-catalogue-cover" src="/img/catalogue-novagift-2027-cover.jpg" width="538" height="760" alt="Couverture du catalogue Novagift 2027">
+    <div><p class="eyebrow">NOVAGIFT · COLLECTION 2027</p><h1 id="pdf-catalogue-title">Catalogue général 2027</h1>
+      <p>Feuilletez le catalogue Novagift ou gardez une copie pour préparer votre sélection.</p>
+      <p class="pdf-details">PDF · 152 pages · 19 Mo</p>
+      <div class="pdf-actions">
+        <a class="button" href="${pdfHref}" target="_blank" rel="noopener noreferrer">Voir le catalogue PDF</a>
+        <a class="pdf-download" href="${pdfHref}" download>Télécharger le PDF</a>
+      </div>
+    </div>
+  </section>`,
+}));
 
 await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les références et quantités de votre sélection.', path: '/devis/', body: `
   <section class="intro"><div class="wrap"><p class="eyebrow">COFFRET &amp; CIE</p><h1>Ma demande de devis</h1><p>Vérifiez les références et les quantités avant d’envoyer votre demande.</p></div></section>
@@ -186,9 +207,13 @@ for (const sheet of ['catalogue-full-v2.css', 'catalogue-full.css']) {
   await copyFile(new URL('style.css', root), new URL(sheet, output));
 }
 await mkdir(new URL('img/', output), { recursive: true });
-await copyFile(new URL('img/novagift-logo.png', root), new URL('img/novagift-logo.png', output));
+for (const filename of ['novagift-logo.png', 'catalogue-novagift-2027-cover.jpg', 'whatsapp-official.svg']) {
+  await copyFile(new URL('img/' + filename, root), new URL('img/' + filename, output));
+}
+await mkdir(new URL('catalogues/', output), { recursive: true });
+await copyFile(new URL('catalogues/' + pdfFileName, root), new URL(pdfHref.slice(1), output));
 await copyFile(new URL('devis.css', root), new URL('devis-v2.css', output));
-await copyFile(new URL('header-contact.css', root), new URL('header-contact-v1.css', output));
+await copyFile(new URL('header-contact.css', root), new URL('header-contact-v2.css', output));
 const quoteScript = await readFile(new URL('devis.js', root), 'utf8');
 await writeFile(new URL('devis-prices.js', output), quoteScript
   .replace('/* minimum */ 50', String(minimumQuantity))
