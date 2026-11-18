@@ -17,12 +17,12 @@ const date = new Intl.DateTimeFormat('fr-MA', { dateStyle: 'long', timeZone: 'Af
 const stockNote = 'Stock indicatif tiré du catalogue Idelo consulté le ' + date + '. Disponibilité à confirmer.';
 const pagePath = (family, page) => (family ? familyPath(family) : '/') + (page === 1 ? '' : 'page/' + page + '/');
 
-function layout({ title, description, path, body }) {
+function layout({ title, description, path, body, catalogScript = false }) {
   return `<!doctype html><html lang="fr-MA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full.css"><script src="/catalogue-full.js" type="module"></script></head>
+  <link rel="stylesheet" href="/catalogue-full.css">${catalogScript ? '<script src="/catalogue-indexed.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
   <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form></div>
@@ -39,7 +39,7 @@ function catalog(items, family, page) {
   const colorKeys = [...new Set(items.flatMap(p => p.colors))].sort((a, b) => colorName(a).localeCompare(colorName(b), 'fr'));
   const typeKeys = [...new Set(items.map(p => p.type))].sort((a, b) => a.localeCompare(b, 'fr'));
   const options = (values, label = value => value) => values.map(value => '<option value="' + escape(value) + '">' + escape(label(value)) + '</option>').join('');
-  return layout({ title: title + (page > 1 ? ' · Page ' + page : ''), description, path: pagePath(family, page), body: `
+  return layout({ title: title + (page > 1 ? ' · Page ' + page : ''), description, path: pagePath(family, page), catalogScript: true, body: `
     <section class="intro"><div class="wrap"><p class="eyebrow">CADEAUX D’ENTREPRISE · MAROC</p><h1>${escape(title)}</h1><p>${escape(description)}</p></div></section>
     <div class="wrap catalog"><aside aria-label="Filtres"><h2>Affiner</h2><nav class="family-links" aria-label="Familles de produits"><a href="/">Tous les produits</a>${links}</nav>
     <form id="filters"><fieldset><legend>Couleur</legend><select name="color" aria-label="Filtrer par couleur"><option value="">Toutes</option>${options(colorKeys, colorName)}</select></fieldset>
@@ -79,7 +79,7 @@ for (const p of products) {
 await copyFile(new URL('style.css', root), new URL('catalogue-full.css', output));
 await copyFile(new URL('cards.mjs', root), new URL('cards-full.js', output));
 const browserScript = await readFile(new URL('catalogue.js', root), 'utf8');
-await writeFile(new URL('catalogue-full.js', output), browserScript.replace('./cards.mjs', './cards-full.js'));
-await writeFile(new URL('catalogue-data-full.json', output), JSON.stringify(products));
+await writeFile(new URL('catalogue-indexed.js', output), browserScript
+  .replace('./cards.mjs', './cards-full.js').replace('/* built catalog */ []', () => JSON.stringify(products)));
 await writeFile(new URL('robots.txt', output), 'User-agent: *\nAllow: /\n');
 console.log('Built ' + products.length + ' product pages across ' + (groups.length - 1) + ' families.');
