@@ -2,6 +2,7 @@
   'use strict';
 
   const key = 'coffret-cie-devis-v1';
+  const draftKey = 'coffret-cie-reference-v1';
   const minimum = /* minimum */ 50;
   const maximum = /* maximum */ 1000000;
   const formatQuantity = new Intl.NumberFormat('fr-MA').format;
@@ -36,10 +37,44 @@
 
   function save(items) {
     localStorage.setItem(key, JSON.stringify(items));
+    localStorage.removeItem(draftKey);
     updateBadge(items);
   }
 
-  updateBadge(read());
+  const tray = document.querySelector('#quote-tray');
+  const trayToggle = document.querySelector('#tray-toggle');
+  const trayContent = document.querySelector('#tray-content');
+
+  function expandTray(expanded) {
+    if (!tray) return;
+    trayToggle.setAttribute('aria-expanded', String(expanded));
+    trayContent.hidden = !expanded;
+  }
+
+  function renderTray(items) {
+    if (!tray) return;
+    tray.hidden = items.length === 0;
+    document.querySelector('#tray-count').textContent = formatQuantity(items.length);
+    document.querySelector('#tray-total').textContent =
+      formatQuantity(items.reduce((total, item) => total + item.quantity, 0)) + ' pièces';
+    const trayLines = document.querySelector('#tray-lines');
+    trayLines.replaceChildren();
+    for (const item of items) {
+      const row = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = '/produits/' + item.id + '/';
+      link.textContent = item.name;
+      const quantity = document.createElement('span');
+      quantity.textContent = formatQuantity(item.quantity) + ' pièces';
+      row.append(link, quantity);
+      trayLines.append(row);
+    }
+  }
+
+  if (trayToggle) trayToggle.addEventListener('click', () => expandTray(trayContent.hidden));
+  const initialItems = read();
+  updateBadge(initialItems);
+  renderTray(initialItems);
   const add = document.querySelector('#quote-add');
   if (add) {
     const product = JSON.parse(add.dataset.item);
@@ -67,6 +102,8 @@
       else items[index] = line;
       try {
         save(items);
+        renderTray(items);
+        expandTray(true);
         status.textContent = formatQuantity(combined) + ' pièces de cette référence dans votre devis.';
         document.querySelector('#open-quote').hidden = false;
       } catch {
@@ -85,6 +122,10 @@
   const message = page.querySelector('#quote-message');
   const status = page.querySelector('#quote-status');
   const summary = page.querySelector('#quote-summary');
+  const create = page.querySelector('#quote-create');
+  const quoteDocument = page.querySelector('#quote-document');
+  const share = page.querySelector('#quote-share');
+  const selectionsKey = items => JSON.stringify(items.map(({ id, quantity }) => [id, quantity]));
   const contactNote = page.querySelector('#quote-contact-note');
   const email = page.querySelector('#quote-email');
   const whatsapp = page.querySelector('#quote-whatsapp');
@@ -95,9 +136,59 @@
     '<div class="quote-line-value"><span></span><button type="button" class="quote-remove">Retirer</button></div></li>';
 
   function updateFromStorage(event) {
-    if (event.key !== key && event.key !== null) return;
-    updateBadge(read());
+    if (event.key !== key && event.key !== draftKey && event.key !== null) return;
+    const items = read();
+    updateBadge(items);
+    renderTray(items);
     if (page) render();
+  }
+
+  function readDraft(items) {
+    try {
+      const draft = JSON.parse(localStorage.getItem(draftKey) || 'null');
+      return draft?.selection === selectionsKey(items)
+        && /^NG-\d{4}(?:-[0-9A-F]{8}){3}$/.test(draft.reference)
+        && Number.isFinite(Date.parse(draft.createdAt)) ? draft : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function newDraft(items) {
+    const date = new Date();
+    const year = new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'Africa/Casablanca' }).format(date);
+    const hex = Array.from(crypto.getRandomValues(new Uint8Array(12)), byte =>
+      byte.toString(16).padStart(2, '0')).join('').toUpperCase();
+    return { reference: 'NG-' + year + '-' + hex.match(/.{8}/g).join('-'),
+      createdAt: date.toISOString(), selection: selectionsKey(items) };
+  }
+
+  function recipient() {
+    return ['name', 'company', 'city'].map(field => create.elements.namedItem(field).value.trim()).filter(Boolean);
+  }
+
+  function renderDocument(draft, items, pieces, estimate, contacts) {
+    page.querySelector('#document-ref').textContent = draft.reference;
+    page.querySelector('#document-date').textContent = new Intl.DateTimeFormat('fr-MA', {
+      dateStyle: 'short', timeZone: 'Africa/Casablanca',
+    }).format(new Date(draft.createdAt));
+    page.querySelector('#document-recipient').textContent = contacts.join(' · ') || 'Non renseigné';
+    const tbody = page.querySelector('#document-lines');
+    tbody.replaceChildren();
+    for (const item of items) {
+      const unit = unitPrice(item, item.quantity);
+      const currency = item.prices?.currency;
+      const row = document.createElement('tr');
+      for (const value of [item.name + ' · ' + item.sku, formatQuantity(item.quantity),
+        unit === null ? '—' : money(unit, currency), unit === null ? 'Sur devis' : money(unit * item.quantity, currency)]) {
+        const cell = document.createElement('td');
+        cell.textContent = value;
+        row.append(cell);
+      }
+      tbody.append(row);
+    }
+    page.querySelector('#document-quantity').textContent = formatQuantity(pieces);
+    page.querySelector('#document-money').textContent = estimate;
   }
 
   function render() {
@@ -144,13 +235,20 @@
     const estimate = quoted ? quoted + (unknown ? ' (partiel)' : '') : 'Sur devis';
     page.querySelector('#quote-total').textContent = formatQuantity(pieces);
     page.querySelector('#quote-money').textContent = estimate;
+    const draft = readDraft(items);
+    quoteDocument.hidden = !draft;
+    share.hidden = !draft;
+    if (!draft) return;
+    const contacts = recipient();
+    renderDocument(draft, items, pieces, estimate, contacts);
     const totalLines = ['Total : ' + formatQuantity(pieces) + ' pièces'];
     if (quoted) totalLines.push('Estimation articles : ' + estimate);
-    message.value = ['Bonjour Coffret & Cie,', 'Je souhaite recevoir un devis pour les références suivantes :',
+    message.value = ['Bonjour Coffret & Cie,', 'Demande de devis : ' + draft.reference,
+      ...(contacts.length ? ['Destinataire : ' + contacts.join(' · ')] : []), 'Je souhaite recevoir un devis pour les références suivantes :',
       '', ...details, '', ...totalLines, confirmation, '', 'Merci !'].join('\n');
     const encoded = encodeURIComponent(message.value);
     email.href = 'mailto:' + page.dataset.email + '?subject=' +
-      encodeURIComponent('Demande de devis — Coffret & Cie') + '&body=' + encoded;
+      encodeURIComponent('Demande de devis — ' + draft.reference) + '&body=' + encoded;
     whatsapp.href = 'https://wa.me/' + page.dataset.whatsapp + '?text=' + encoded;
     email.hidden = !page.dataset.email || encoded.length > 3800;
     whatsapp.hidden = !page.dataset.whatsapp || encoded.length > 3800;
@@ -180,6 +278,29 @@
   list.addEventListener('click', event => {
     const button = event.target.closest('.quote-remove');
     if (button) apply(read().filter(item => item.id !== button.dataset.id), 'Référence retirée.');
+  });
+  create.addEventListener('submit', event => {
+    event.preventDefault();
+    const items = read();
+    if (!items.length) return;
+    try {
+      if (!readDraft(items)) localStorage.setItem(draftKey, JSON.stringify(newDraft(items)));
+      render();
+      quoteDocument.scrollIntoView({ block: 'start' });
+      status.textContent = 'Votre demande de devis est prête.';
+    } catch {
+      status.textContent = storageError;
+    }
+  });
+  create.addEventListener('change', () => {
+    if (quoteDocument.hidden) return;
+    try {
+      localStorage.removeItem(draftKey);
+      render();
+      status.textContent = 'Cliquez sur Créer mon devis pour appliquer les nouvelles coordonnées.';
+    } catch {
+      status.textContent = storageError;
+    }
   });
   page.querySelector('#quote-print').addEventListener('click', () => window.print());
   page.querySelector('#quote-copy').addEventListener('click', async () => {

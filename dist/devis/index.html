@@ -2,7 +2,7 @@
   <title>Ma demande de devis | Coffret &amp; Cie</title><meta name="description" content="Préparez votre demande de devis Coffret &amp; Cie et récapitulez les références et quantités de votre sélection.">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="https://coffret-et-cie-catalogue.sassy-leaf-4417.chatgpt.site/devis/">
   <meta property="og:title" content="Ma demande de devis | Coffret &amp; Cie"><meta property="og:description" content="Préparez votre demande de devis Coffret &amp; Cie et récapitulez les références et quantités de votre sélection.">
-  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v1.css"><script src="/devis-v1.js" defer></script>
+  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v2.css"><script src="/devis-v2.js" defer></script>
   </head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
@@ -17,7 +17,28 @@
       <h2 id="quote-summary-title">Votre sélection</h2><ul id="quote-lines" class="quote-lines"></ul>
       <p class="quote-total"><strong>Total des pièces</strong> <output id="quote-total"></output></p>
       <p class="quote-total"><strong>Estimation articles</strong> <output id="quote-money"></output></p>
-      <p class="demo">Disponibilité, marquage, livraison et montant définitif à confirmer.</p>
+      <form id="quote-create" class="quote-create">
+        <h2>Destinataire <small>(facultatif)</small></h2>
+        <div class="quote-fields">
+          <label>Votre nom <input name="name" autocomplete="name" maxlength="100"></label>
+          <label>Entreprise <input name="company" autocomplete="organization" maxlength="100"></label>
+          <label>Ville <input name="city" autocomplete="address-level2" maxlength="100"></label>
+        </div>
+        <button type="submit">Créer mon devis</button>
+      </form>
+      <article class="quote-document" id="quote-document" aria-labelledby="quote-document-title" hidden>
+        <img class="quote-logo" src="/img/novagift-logo.png" width="176" height="133" alt="Novagift">
+        <div class="quote-document-party"><strong>Novagift SARL</strong><span>amine.aouaje@novagift.ma</span></div>
+        <div class="quote-document-meta">
+          <dl><div><dt>Date</dt><dd id="document-date"></dd></div><div><dt>Référence</dt><dd id="document-ref"></dd></div></dl>
+          <div class="quote-document-party"><strong>Destinataire</strong><span id="document-recipient"></span></div>
+        </div>
+        <h2 id="quote-document-title">Demande de devis</h2>
+        <table><thead><tr><th scope="col">Description</th><th scope="col">Quantité</th><th scope="col">Prix unitaire</th><th scope="col">Montant</th></tr></thead><tbody id="document-lines"></tbody></table>
+        <dl class="quote-document-total"><div><dt>Total des pièces</dt><dd id="document-quantity"></dd></div><div><dt>Estimation articles</dt><dd id="document-money"></dd></div></dl>
+        <p class="demo">Disponibilité, marquage, livraison et montant définitif à confirmer.</p>
+      </article>
+      <div id="quote-share" hidden>
       <div class="quote-actions">
         <button type="button" id="quote-print">Imprimer / PDF</button>
         <button type="button" class="quote-secondary" id="quote-copy">Copier le message</button>
@@ -27,7 +48,9 @@
       <p id="quote-contact-note" class="demo" hidden></p>
       <label for="quote-message" class="quote-message-label">Message prêt à envoyer</label>
       <textarea id="quote-message" rows="8" readonly></textarea>
+      </div>
     </section>
     <p id="quote-status" class="quote-status" role="status"></p>
   </div></main>
+  
   <footer><div class="wrap footer"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Catalogue · Maroc</p></div></footer></body></html>

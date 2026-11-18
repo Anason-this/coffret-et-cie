@@ -27,13 +27,19 @@ function layout({ title, description, path, body, catalogScript = false }) {
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v1.css"><script src="/devis-v1.js" defer></script>
+  <link rel="stylesheet" href="/catalogue-full.css"><link rel="stylesheet" href="/devis-v2.css"><script src="/devis-v2.js" defer></script>
   ${catalogScript ? '<script src="/catalogue-indexed.js" type="module"></script>' : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
   <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form><a class="quote-nav" href="/devis/">Mon devis <span data-quote-count hidden>0</span></a></div>
   <nav class="wrap nav" aria-label="Catégories"><a href="/">Catalogue</a>${links}</nav></header>
   <main id="contenu">${body}</main>
+  ${path === '/devis/' ? '' : `<aside class="quote-tray" id="quote-tray" aria-label="Sélection pour le devis" hidden>
+    <button class="tray-toggle" id="tray-toggle" type="button" aria-controls="tray-content" aria-expanded="false">
+      <span>Mon devis <span class="tray-badge" id="tray-count"></span></span><span class="tray-chevron" aria-hidden="true">⌃</span>
+    </button>
+    <div id="tray-content" class="tray-content" hidden><ul id="tray-lines"></ul><div class="tray-footer"><strong id="tray-total"></strong><a class="button" href="/devis/">Voir mon devis →</a></div></div>
+  </aside>`}
   <footer><div class="wrap footer"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Catalogue · Maroc</p></div></footer></body></html>`;
 }
 
@@ -104,7 +110,28 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
       <h2 id="quote-summary-title">Votre sélection</h2><ul id="quote-lines" class="quote-lines"></ul>
       <p class="quote-total"><strong>Total des pièces</strong> <output id="quote-total"></output></p>
       <p class="quote-total"><strong>Estimation articles</strong> <output id="quote-money"></output></p>
-      <p class="demo">Disponibilité, marquage, livraison et montant définitif à confirmer.</p>
+      <form id="quote-create" class="quote-create">
+        <h2>Destinataire <small>(facultatif)</small></h2>
+        <div class="quote-fields">
+          <label>Votre nom <input name="name" autocomplete="name" maxlength="100"></label>
+          <label>Entreprise <input name="company" autocomplete="organization" maxlength="100"></label>
+          <label>Ville <input name="city" autocomplete="address-level2" maxlength="100"></label>
+        </div>
+        <button type="submit">Créer mon devis</button>
+      </form>
+      <article class="quote-document" id="quote-document" aria-labelledby="quote-document-title" hidden>
+        <img class="quote-logo" src="/img/novagift-logo.png" width="176" height="133" alt="Novagift">
+        <div class="quote-document-party"><strong>Novagift SARL</strong><span>${escape(quoteConfig.email)}</span></div>
+        <div class="quote-document-meta">
+          <dl><div><dt>Date</dt><dd id="document-date"></dd></div><div><dt>Référence</dt><dd id="document-ref"></dd></div></dl>
+          <div class="quote-document-party"><strong>Destinataire</strong><span id="document-recipient"></span></div>
+        </div>
+        <h2 id="quote-document-title">Demande de devis</h2>
+        <table><thead><tr><th scope="col">Description</th><th scope="col">Quantité</th><th scope="col">Prix unitaire</th><th scope="col">Montant</th></tr></thead><tbody id="document-lines"></tbody></table>
+        <dl class="quote-document-total"><div><dt>Total des pièces</dt><dd id="document-quantity"></dd></div><div><dt>Estimation articles</dt><dd id="document-money"></dd></div></dl>
+        <p class="demo">Disponibilité, marquage, livraison et montant définitif à confirmer.</p>
+      </article>
+      <div id="quote-share" hidden>
       <div class="quote-actions">
         <button type="button" id="quote-print">Imprimer / PDF</button>
         <button type="button" class="quote-secondary" id="quote-copy">Copier le message</button>
@@ -114,14 +141,17 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
       <p id="quote-contact-note" class="demo" hidden></p>
       <label for="quote-message" class="quote-message-label">Message prêt à envoyer</label>
       <textarea id="quote-message" rows="8" readonly></textarea>
+      </div>
     </section>
     <p id="quote-status" class="quote-status" role="status"></p>
   </div>` }));
 
 await copyFile(new URL('style.css', root), new URL('catalogue-full.css', output));
-await copyFile(new URL('devis.css', root), new URL('devis-v1.css', output));
+await mkdir(new URL('img/', output), { recursive: true });
+await copyFile(new URL('img/novagift-logo.png', root), new URL('img/novagift-logo.png', output));
+await copyFile(new URL('devis.css', root), new URL('devis-v2.css', output));
 const quoteScript = await readFile(new URL('devis.js', root), 'utf8');
-await writeFile(new URL('devis-v1.js', output), quoteScript
+await writeFile(new URL('devis-v2.js', output), quoteScript
   .replace('/* minimum */ 50', String(minimumQuantity))
   .replace('/* maximum */ 1000000', String(maximumQuantity)));
 await copyFile(new URL('cards.mjs', root), new URL('cards-full.js', output));
