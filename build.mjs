@@ -1,6 +1,7 @@
 import { mkdir, writeFile, copyFile, readFile } from 'node:fs/promises';
 import { card, colorName, escape, familyNames, familyPath, number, pageSize, picture, productPath, stock, swatches } from './cards.mjs';
 import { markedUpPrices, maximumQuantity, minimumQuantity } from './quote-pricing.mjs';
+import { describeProduct } from './product-seo.mjs';
 
 const root = new URL('.', import.meta.url);
 const output = new URL('dist/', root);
@@ -80,14 +81,19 @@ for (const family of groups) {
 }
 
 for (const p of products) {
-  const description = p.specification || p.type;
+  const seo = describeProduct(p);
   const prices = quotePrices.get(p.sku) ?? null;
   const initialUnit = prices?.tiers.find(tier => tier.through === null || minimumQuantity <= tier.through)?.unitMinor;
   const initialLabel = initialUnit === undefined ? 'Prix sur devis' :
     new Intl.NumberFormat('fr-MA', { style: 'currency', currency: prices.currency }).format(initialUnit / 100) + ' / pièce';
-  await save(productPath(p), layout({ title: p.name + ' · ' + p.type, description, path: productPath(p), body: `
+  await save(productPath(p), layout({ title: seo.title, description: seo.meta, path: productPath(p), body: `
     <div class="wrap detail-wrap"><nav aria-label="Fil d’Ariane" class="crumb"><a href="/">Catalogue</a> / <a href="${familyPath(p.family)}">${escape(familyNames[p.family])}</a> / <span>${escape(p.name)}</span></nav>
-    <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><p class="eyebrow">${escape(p.sku)}</p><h1>${escape(p.name)}</h1><p>${escape(description)}</p>
+    <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><p class="eyebrow">${escape(p.sku)}</p><h1>${escape(p.name)}</h1>
+    <section class="product-description" aria-labelledby="product-description-title">
+      <h2 id="product-description-title">${escape(seo.label.replace(/^./u, char => char.toLocaleUpperCase('fr')))} avec logo</h2>
+      ${seo.copy.map(paragraph => '<p>' + escape(paragraph) + '</p>').join('')}
+      ${seo.facts.length ? '<ul aria-label="Caractéristiques du catalogue">' + seo.facts.map(fact => '<li>' + escape(fact) + '</li>').join('') + '</ul>' : ''}
+    </section>
     <h2>Coloris</h2>${swatches(p, true)}<h2>Disponibilité indicative</h2>${stock(p)}<p class="demo">${stockNote}</p>
     <section class="quote-product" aria-labelledby="quote-product-title"><h2 id="quote-product-title">Votre quantité</h2>
       <p class="quote-price" id="quote-unit-price">${escape(initialLabel)}</p>
