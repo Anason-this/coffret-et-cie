@@ -4,6 +4,29 @@ const lowerFirst = text => text[0].toLocaleLowerCase('fr') + text.slice(1);
 const clean = text => text.replace(/\s+/g, ' ').trim();
 const words = new Intl.ListFormat('fr', { style: 'long', type: 'conjunction' });
 
+const searchAliases = [
+  [/^sac cabas\b/i, 'tote bags sacs cabas shopper bag'],
+  [/^sac à dos\b/i, 'backpacks'],
+  [/^sac banane\b/i, 'banane waist bag fanny pack'],
+  [/^batterie externe\b/i, 'power banks batteries portables'],
+  [/^clé USB\b/i, 'flash drive USB stick'],
+  [/^gourde\b/i, 'bouteilles'],
+  [/^gourde (?:isotherme|thermique)\b/i, 'bouteilles isothermes thermiques'],
+  [/^(?:mug|gobelet) (?:isotherme|thermique)\b/i, 'tumbler tasse isotherme'],
+  [/^stylo à bille\b/i, 'stylo bille ballpoint pen'],
+  [/^bloc de notes adhésives\b/i, 'bloc memo sticky notes post it'],
+  [/^écouteurs\b/i, 'earbuds earphones'],
+  [/^casque audio\b/i, 'headphones'],
+  [/^chargeur sans fil\b/i, 'chargeur induction wireless charger'],
+  [/^porte-clés\b/i, 'keyring keychain'],
+];
+
+export const catalogTypeName = type => type.replace(/^sac cabas\b/i, 'Tote bag');
+
+export function catalogSearchTerms(type) {
+  return searchAliases.filter(([rule]) => rule.test(type)).map(([, aliases]) => aliases).join(' ');
+}
+
 // Each rule matches the catalog type, so a nearby keyword never implies a
 // feature the source did not provide (for example Bluetooth or cotton).
 const intents = [
@@ -59,6 +82,20 @@ function searchableDetail(facts, type) {
   return /^\d|^a[456]$/i.test(candidate) ? candidate : 'en ' + lowerFirst(candidate);
 }
 
+function catalogHeading(label, facts, type) {
+  const heading = label[0].toLocaleUpperCase('fr') + label.slice(1);
+  if (label !== lowerFirst(type) || label.length > 38) return heading;
+
+  const mechanism = facts.find(fact => /^(?:bouton-poussoir|mécanisme rotatif)$/i.test(fact));
+  if (mechanism) return heading + ' à ' + lowerFirst(mechanism);
+
+  const ink = /^stylo\b/i.test(type) && facts.find(fact => /^encre (?:bleue|noire)$/i.test(fact));
+  if (ink) return heading + ' à ' + lowerFirst(ink);
+
+  const dimensions = facts.find(fact => /^\d+(?:[,.]\d+)?(?:\s*[×x]\s*\d+(?:[,.]\d+)?){1,2}\s*cm$/i.test(fact));
+  return dimensions ? heading + ' ' + dimensions.replace(/\s*[×x]\s*/gi, ' × ') : heading;
+}
+
 export function describeProduct(product) {
   const type = clean(product.type);
   const { expandedType, facts } = productFacts(product);
@@ -87,6 +124,7 @@ export function describeProduct(product) {
   const showFacts = facts.filter(fact => !/^(?:transport et rangement|accessoire pour clés|accessoire de bureau|câble pour appareils compatibles)$/i.test(fact));
   return {
     label,
+    catalogHeading: catalogTypeName(catalogHeading(label, facts, type)),
     title: product.name + ' · ' + phrase,
     keyword: phrase + ' Maroc',
     modelKeyword: product.name + ' ' + phrase + ' Maroc',

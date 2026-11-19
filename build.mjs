@@ -1,7 +1,7 @@
 import { mkdir, writeFile, copyFile, readFile } from 'node:fs/promises';
-import { card, colorName, escape, familyNames, familyPath, number, pageSize, picture, productPath, stock, swatches, unitPriceLabel } from './cards.mjs';
+import { card, colorName, escape, familyNames, familyPath, number, pageSize, picture, productHeading, productLabel, productPath, stock, swatches, unitPriceLabel } from './cards.mjs';
 import { markedUpIdeloPrices, maximumQuantity, minimumQuantity } from './quote-pricing.mjs';
-import { describeProduct } from './product-seo.mjs';
+import { catalogSearchTerms, catalogTypeName, describeProduct } from './product-seo.mjs';
 
 const root = new URL('.', import.meta.url);
 const output = new URL('dist/', root);
@@ -19,10 +19,46 @@ for (const p of products) {
 }
 const priceSnapshot = JSON.parse(await readFile(new URL('idelo-prices.json', root), 'utf8'));
 const quotePrices = markedUpIdeloPrices(priceSnapshot, products);
-for (const product of products) product.unitPriceMinor = quotePrices.get(product.sku);
-const priceIndexJson = JSON.stringify(Object.fromEntries(quotePrices)).replace(/</g, '\\u003c');
+const seoById = new Map();
+for (const product of products) {
+  const seo = describeProduct(product);
+  seoById.set(product.id, seo);
+  product.catalogHeading = seo.catalogHeading;
+  product.searchTerms = catalogSearchTerms(product.type);
+  product.unitPriceMinor = quotePrices.get(product.sku);
+}
+const quoteIndexJson = JSON.stringify(Object.fromEntries(products.map(p => [
+  p.id, { name: productLabel(p), unitPriceMinor: p.unitPriceMinor },
+]))).replace(/</g, '\\u003c');
 
-const links = Object.entries(familyNames).map(([id, name]) => '<a href="' + familyPath(id) + '">' + escape(name) + '</a>').join('');
+const featuredCollections = {
+  ecriture: {
+    title: 'Stylos publicitaires et articles d’écriture',
+    menu: 'Stylos publicitaires',
+    description: 'Comparez les stylos à bille, rollers et crayons à personnaliser avec votre logo. Consultez les coloris, les prix et le stock indicatif avant de demander un devis.'
+  },
+  hydratation: {
+    title: 'Gourdes et mugs personnalisables',
+    menu: 'Gourdes personnalisables',
+    description: 'Choisissez des gourdes, mugs ou gobelets pour vos équipes et vos événements. Comparez les modèles selon la capacité, la matière et les coloris indiqués sur chaque fiche.'
+  },
+  sacs: {
+    title: 'Sacs et tote bags personnalisables',
+    menu: 'Sacs personnalisables',
+    description: 'Retrouvez des tote bags, des sacs à dos et des porte-documents à personnaliser. Filtrez par type ou par couleur pour préparer un devis pour votre salon, votre équipe ou votre événement.'
+  },
+  'carnets-et-coffrets': {
+    title: 'Coffrets cadeaux d’entreprise et carnets',
+    menu: 'Coffrets & carnets',
+    description: 'Comparez les coffrets d’écriture, les carnets avec stylo et les blocs-notes pour vos cadeaux d’entreprise. Ouvrez une fiche pour consulter la composition et les coloris indiqués.'
+  },
+};
+const familyOrder = [...new Set([...Object.keys(featuredCollections), ...Object.keys(familyNames)])];
+const headerFamilies = familyOrder.filter(id => id !== 'maison-loisirs-accessoires');
+const collectionLinks = (families, currentPath) => families.map(id => {
+  const href = familyPath(id);
+  return `<a href="${href}"${currentPath === href ? ' aria-current="page"' : ''}>${escape(featuredCollections[id]?.menu ?? familyNames[id])}</a>`;
+}).join('');
 const date = new Intl.DateTimeFormat('fr-MA', { dateStyle: 'long', timeZone: 'Africa/Casablanca' }).format(new Date(snapshot.importedAt));
 const stockNote = 'Stock indicatif tiré du catalogue Idelo consulté le ' + date + '. Disponibilité à confirmer.';
 const pagePath = (family, page) => (family ? familyPath(family) : '/') + (page === 1 ? '' : 'page/' + page + '/');
@@ -47,23 +83,36 @@ const floatingContacts = [
   phone ? `<a class="contact-shortcut contact-whatsapp" href="${escape(whatsappHref)}" target="_blank" rel="noopener noreferrer" aria-label="Nous contacter sur WhatsApp" title="WhatsApp"><img src="/img/whatsapp-official.svg" width="27" height="27" alt=""></a>` : '',
   quoteConfig.email ? `<a class="contact-shortcut contact-mail" href="${escape(emailHref)}" aria-label="Nous écrire par e-mail" title="E-mail">${icon('mail')}</a>` : '',
 ].join('');
+const footerContacts = [
+  phone ? `<a href="tel:${escape(phone)}">${escape(phoneLabel)}</a>` : '',
+  quoteConfig.email ? `<a href="${escape(emailHref)}">${escape(quoteConfig.email)}</a>` : '',
+  phone ? `<a href="${escape(whatsappHref)}" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp ↗</a>` : '',
+].join('');
+const siteFooter = `<footer class="site-footer"><div class="wrap footer">
+    <div class="footer-brand"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Cadeaux d’entreprise et objets publicitaires au Maroc.</p></div>
+    <nav class="footer-links" aria-labelledby="footer-help"><h2 id="footer-help">Aide et support</h2>
+      <a href="/aide/">Questions fréquentes</a><a href="/devis/">Mon devis</a><a href="/catalogue-pdf/">Catalogue PDF</a>
+    </nav>
+    ${footerContacts ? `<section class="footer-links" id="contact" aria-labelledby="footer-contact"><h2 id="footer-contact">Nous contacter</h2>${footerContacts}</section>` : ''}
+  </div></footer>`;
 
-function layout({ title, description, path, body, catalogScript = false }) {
+function layout({ title, description, path, body, catalogScript = false, structuredData }) {
   return `<!doctype html><html lang="fr-MA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
   <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
-  <link rel="stylesheet" href="/catalogue-full-v2.css"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v2.css"><script src="/devis-prices.js" defer></script>
-  ${catalogScript ? '<script src="/catalogue-priced.js" type="module"></script>' : ''}</head>
+  <link rel="stylesheet" href="/catalogue-full-v3.css?v=${path === '/' ? 'compact-intro' : 'footer'}"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v2.css"><script src="/devis-prices.js?v=product-names" defer></script>
+  ${catalogScript ? '<script src="/catalogue-browse.js?v=product-names" type="module"></script>' : ''}
+  ${structuredData ? `<script type="application/ld+json">${JSON.stringify(structuredData).replace(/</g, '\\u003c')}</script>` : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
   <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
-  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit ou une référence"><button>Rechercher</button></form>
+  <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit"><button>Rechercher</button></form>
   <div class="mast-actions">
     ${headerContacts ? `<div class="header-contacts" aria-label="Coordonnées">${headerContacts}</div>` : ''}
     <a class="quote-nav" href="/devis/"${path === '/devis/' ? ' aria-current="page"' : ''}>${icon('quote')} Mon devis <span data-quote-count hidden>0</span></a>
   </div></div>
-  <nav class="wrap nav" aria-label="Catégories et catalogue"><a href="/">Catalogue</a>${links}
+  <nav class="wrap nav" aria-label="Catégories et catalogue"><a href="/"${path === '/' ? ' aria-current="page"' : ''}>Catalogue</a>${collectionLinks(headerFamilies, path)}
     <a class="nav-pdf" href="/catalogue-pdf/"${path === '/catalogue-pdf/' ? ' aria-current="page"' : ''}>${icon('quote')} Catalogue PDF</a>
   </nav></header>
   <main id="contenu">${body}</main>
@@ -76,30 +125,56 @@ function layout({ title, description, path, body, catalogScript = false }) {
   </aside>`}
   ${floatingContacts ? `<nav class="floating-contacts" aria-label="Contact rapide">${floatingContacts}</nav>` : ''}
   </div>
-  <footer><div class="wrap footer"><a class="wordmark" href="/">Coffret &amp; Cie</a><p>Catalogue · Maroc</p></div></footer></body></html>`;
+  ${siteFooter}</body></html>`;
 }
 
-function catalog(items, family, page) {
-  const title = family ? familyNames[family] : 'Objets publicitaires au Maroc';
-  const description = family ? 'Parcourez la collection ' + title.toLowerCase() + ' et comparez les modèles, références et coloris.'
-    : 'Explorez les coffrets cadeaux et objets publicitaires personnalisables de Coffret & Cie. Comparez les modèles, les coloris et les références.';
+function catalogFilters(items) {
+  const variantKeys = [...new Set(items.flatMap(p => p.colors))].sort((a, b) => colorName(a).localeCompare(colorName(b), 'fr'));
+  const variantLabel = value => colorName(value).replace(/^./u, char => char.toLocaleUpperCase('fr'));
+  const byType = Map.groupBy(items, p => p.type);
+  const compareTypes = (a, b) => catalogTypeName(a).localeCompare(catalogTypeName(b), 'fr');
+  const types = [...byType.keys()].sort(compareTypes);
+  const popular = [...types].sort((a, b) => byType.get(b).length - byType.get(a).length || compareTypes(a, b)).slice(0, 5);
+  const remaining = types.filter(type => !popular.includes(type));
+  const options = (values, label = value => value) => values.map(value =>
+    `<option value="${escape(value)}">${escape(label(value))}</option>`).join('');
+  return {
+    types: remaining.length ? `<optgroup label="Les plus courants">${options(popular, catalogTypeName)}</optgroup><optgroup label="Autres types">${options(remaining, catalogTypeName)}</optgroup>` : options(types, catalogTypeName),
+    variants: options(variantKeys, variantLabel),
+    shortcuts: types.length > 1 ? `<div class="type-shortcuts" aria-label="Types de produits courants" role="group" data-type-shortcuts hidden>
+      ${popular.map(type => `<button type="button" data-type="${escape(type)}" aria-pressed="false">${escape(catalogTypeName(type))} <span>${number(byType.get(type).length)}</span></button>`).join('')}
+    </div>` : '',
+  };
+}
+
+function catalog(items, family, page, filters) {
+  const path = pagePath(family, page);
+  const isHome = path === '/';
+  const title = family ? featuredCollections[family]?.title ?? familyNames[family] : 'Objets publicitaires au Maroc';
+  const description = family ? featuredCollections[family]?.description
+      ?? 'Parcourez la collection ' + title.toLowerCase() + ' et comparez les modèles et coloris.'
+    : 'Explorez les coffrets cadeaux et objets publicitaires personnalisables de Coffret & Cie. Comparez les modèles et les coloris.';
   const total = Math.ceil(items.length / pageSize);
-  const colorKeys = [...new Set(items.flatMap(p => p.colors))].sort((a, b) => colorName(a).localeCompare(colorName(b), 'fr'));
-  const typeKeys = [...new Set(items.map(p => p.type))].sort((a, b) => a.localeCompare(b, 'fr'));
-  const options = (values, label = value => value) => values.map(value => '<option value="' + escape(value) + '">' + escape(label(value)) + '</option>').join('');
-  return layout({ title: title + (page > 1 ? ' · Page ' + page : ''), description, path: pagePath(family, page), catalogScript: true, body: `
-    <section class="intro"><div class="wrap"><p class="eyebrow">CADEAUX D’ENTREPRISE · MAROC</p><h1>${escape(title)}</h1><p>${escape(description)}</p>
-      ${!family && page === 1 ? `<a class="button catalogue-callout" href="/catalogue-pdf/">${icon('quote')} Voir le catalogue PDF</a>` : ''}
+  const pageLinks = (page === 1 && total > 2) ? Array.from({ length: total - 1 }, (_, i) => {
+    const target = i + 2;
+    return `<a href="${pagePath(family, target)}" aria-label="Page ${target}">${target}</a>`;
+  }).join('') : '';
+  return layout({ title: title + (page > 1 ? ' · Page ' + page : ''), description, path, catalogScript: true, body: `
+    <section class="intro${isHome ? ' intro--home' : ''}"><div class="wrap"><p class="eyebrow">CADEAUX D’ENTREPRISE · MAROC</p><h1>${escape(title)}</h1><p>${escape(description)}</p>
+      ${isHome ? `<div class="intro-actions"><nav class="featured-collections" aria-label="Collections principales">${collectionLinks(Object.keys(featuredCollections))}</nav><a class="button catalogue-callout" href="/catalogue-pdf/">${icon('quote')} Voir le catalogue PDF</a></div>` : ''}
     </div></section>
-    <div class="wrap catalog"><aside aria-label="Filtres"><h2>Affiner</h2><nav class="family-links" aria-label="Familles de produits"><a href="/">Tous les produits</a>${links}</nav>
-    <form id="filters"><fieldset><legend>Couleur</legend><select name="color" aria-label="Filtrer par couleur"><option value="">Toutes</option>${options(colorKeys, colorName)}</select></fieldset>
-    <fieldset><legend>Type de produit</legend><select name="type" aria-label="Filtrer par type"><option value="">Tous</option>${options(typeKeys)}</select></fieldset>
-    <fieldset><legend>Disponibilité</legend><label><input type="checkbox" name="available"> Stock positif</label></fieldset><button type="reset" class="quiet">Réinitialiser</button></form></aside>
-    <section class="results" aria-labelledby="result-title" data-catalog="${family ?? ''}"><div class="toolbar"><div><h2 id="result-title" tabindex="-1">${family ? 'Les références' : 'Tous les produits'}</h2><p id="results-count" aria-live="polite">${number(items.length)} références</p></div>
+    <div class="wrap catalog"><aside aria-label="Filtres"><h2>Affiner</h2><nav class="family-links" aria-label="Familles de produits"><a href="/">Tous les produits</a>${collectionLinks(familyOrder, path)}</nav>
+    <form id="filters">
+    <div class="filter-field"><label for="filter-type">Type de produit</label><select id="filter-type" name="type"><option value="">Tous les types</option>${filters.types}</select></div>
+    <div class="filter-field"><label for="filter-variant">Coloris ou motif</label><select id="filter-variant" name="color"><option value="">Toutes les variantes</option>${filters.variants}</select></div>
+    <fieldset><legend>Disponibilité</legend><label><input type="checkbox" name="available"> Stock total positif</label></fieldset><button type="reset" class="quiet">Réinitialiser</button></form></aside>
+    <section class="results" aria-labelledby="result-title" data-catalog="${family ?? ''}"><div class="toolbar"><div><h2 id="result-title" tabindex="-1">${family ? 'Les produits' : 'Tous les produits'}</h2><p id="results-count" aria-live="polite">${number(items.length)} produits</p></div>
     <label for="sort">Trier par <select id="sort"><option value="default">Sélection</option><option value="stock">Stock décroissant</option><option value="name">Nom A–Z</option></select></label></div>
-    <p class="demo">Prix unitaires TTC, hors marquage et livraison. Minimum 50 pièces par référence. ${stockNote}</p><div class="grid" id="grid">${items.slice((page - 1) * pageSize, page * pageSize).map(card).join('')}</div>
+    ${filters.shortcuts}
+    <p class="demo">Prix unitaires TTC, hors marquage et livraison. Minimum ${minimumQuantity} pièces par produit. ${stockNote}</p><div class="grid" id="grid">${items.slice((page - 1) * pageSize, page * pageSize).map(card).join('')}</div>
     <p id="empty" hidden>Aucun produit ne correspond à ces critères.</p><p id="load-error" role="status" hidden>La recherche est momentanément indisponible. Réessayez dans un instant.</p>
     <nav class="pagination" aria-label="Pages du catalogue" id="pagination">${page > 1 ? `<a href="${pagePath(family, page - 1)}">← Précédente</a>` : ''}<span>Page ${page} sur ${total}</span>${page < total ? `<a href="${pagePath(family, page + 1)}">Suivante →</a>` : ''}</nav>
+    ${pageLinks ? `<details class="page-jump"><summary>Aller à une page du catalogue</summary><nav aria-label="Accès direct aux pages">${pageLinks}</nav></details>` : ''}
     </section></div>` });
 }
 
@@ -115,15 +190,29 @@ const groups = [null, ...Object.keys(familyNames)];
 for (const family of groups) {
   const items = family ? products.filter(p => p.family === family) : products;
   const total = Math.ceil(items.length / pageSize);
-  for (let page = 1; page <= total; page++) await save(pagePath(family, page), catalog(items, family, page));
+  const filters = catalogFilters(items);
+  for (let page = 1; page <= total; page++) await save(pagePath(family, page), catalog(items, family, page, filters));
 }
 
 for (const p of products) {
-  const seo = describeProduct(p);
+  const seo = seoById.get(p.id);
   const initialLabel = unitPriceLabel(p.unitPriceMinor);
-  await save(productPath(p), layout({ title: seo.title, description: seo.meta, path: productPath(p), body: `
-    <div class="wrap detail-wrap"><nav aria-label="Fil d’Ariane" class="crumb"><a href="/">Catalogue</a> / <a href="${familyPath(p.family)}">${escape(familyNames[p.family])}</a> / <span>${escape(p.name)}</span></nav>
-    <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><p class="eyebrow">${escape(p.sku)}</p><h1>${escape(p.name)}</h1>
+  const path = productPath(p);
+  const label = productLabel(p);
+  const breadcrumbs = [['Catalogue', '/'], [featuredCollections[p.family]?.menu ?? familyNames[p.family], familyPath(p.family)], [label, path]];
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map(([name, url], index) => ({
+        '@type': 'ListItem', position: index + 1, name, item: new URL(url, origin).href
+      })) },
+      { '@type': 'Product', name: label, image: p.photo, description: seo.copy[0],
+        category: catalogTypeName(p.type), url: new URL(path, origin).href },
+    ],
+  };
+  await save(path, layout({ title: label, description: seo.meta, path, structuredData, body: `
+    <div class="wrap detail-wrap"><nav aria-label="Fil d’Ariane" class="crumb"><a href="/">Catalogue</a> / <a href="${familyPath(p.family)}">${escape(breadcrumbs[1][0])}</a> / <span aria-current="page">${escape(label)}</span></nav>
+    <article class="detail"><div>${picture(p, false)}</div><div class="detail-copy"><h1 class="product-heading">${productHeading(p)}</h1>
     <div class="product-price"><p class="quote-price" id="quote-unit-price">${escape(initialLabel)}</p>
       <p>${p.unitPriceMinor === null ? 'Demandez un devis dès ' + minimumQuantity + ' pièces.' : 'Dès ' + minimumQuantity + ' pièces · hors marquage et livraison'}</p>
     </div>
@@ -132,9 +221,9 @@ for (const p of products) {
       ${seo.copy.map(paragraph => '<p>' + escape(paragraph) + '</p>').join('')}
       ${seo.facts.length ? '<ul aria-label="Caractéristiques du catalogue">' + seo.facts.map(fact => '<li>' + escape(fact) + '</li>').join('') + '</ul>' : ''}
     </section>
-    <h2>Coloris</h2>${swatches(p, true)}<h2>Disponibilité indicative</h2>${stock(p)}<p class="demo">${stockNote}</p>
+    <h2>Variantes</h2>${swatches(p, true)}<h2>Disponibilité</h2>${stock(p, true)}<p class="demo">${stockNote}</p>
     <section class="quote-product" aria-labelledby="quote-product-title"><h2 id="quote-product-title">Votre quantité</h2>
-      <form id="quote-add" data-item="${escape(JSON.stringify({ id: p.id, sku: p.sku, name: p.name, unitPriceMinor: p.unitPriceMinor }))}">
+      <form id="quote-add" data-item="${escape(JSON.stringify({ id: p.id, name: label }))}">
         <label for="quote-quantity">Pièces <small>(min. ${minimumQuantity})</small></label>
         <input id="quote-quantity" name="quantity" type="number" inputmode="numeric" required min="${minimumQuantity}" max="${maximumQuantity}" step="1" value="${minimumQuantity}">
         <button type="submit">Ajouter au devis</button>
@@ -143,6 +232,30 @@ for (const p of products) {
     </section>
     <a class="collection-back" href="${familyPath(p.family)}">Voir la collection</a></div></article></div>` }));
 }
+
+await save('/aide/', layout({
+  title: 'Aide et support',
+  description: 'Retrouvez les réponses aux questions sur le devis, la personnalisation, les prix et le stock chez Coffret & Cie.',
+  path: '/aide/',
+  body: `<section class="wrap help-page"><h1>Aide et support</h1>
+    <details><summary>Comment demander un devis ?</summary>
+      <p>Ouvrez une fiche produit, choisissez la quantité, puis ajoutez l’article à votre sélection. Dans <a href="/devis/">Mon devis</a>, vous pouvez revoir les articles et les quantités avant de préparer votre demande par e-mail ou WhatsApp.</p>
+    </details>
+    <details><summary>Quelle est la quantité minimale ?</summary>
+      <p>Le minimum est de ${minimumQuantity} pièces par produit.</p>
+    </details>
+    <details><summary>Que comprend le prix affiché ?</summary>
+      <p>Le prix unitaire affiché est TTC, hors marquage et livraison. Les articles dont le prix figure sur devis sont chiffrés à la demande.</p>
+    </details>
+    <details><summary>Puis-je personnaliser un article avec mon logo ?</summary>
+      <p>Indiquez le produit, le coloris, la quantité et le marquage souhaités. Vous pouvez nous transmettre votre logo avec votre demande pour confirmer les options de personnalisation.</p>
+    </details>
+    <details><summary>Le stock affiché correspond-il à mon coloris ?</summary>
+      <p>Le stock affiché est indicatif et regroupe l’ensemble des variantes d’un produit. La disponibilité du coloris et de la quantité souhaités est à confirmer lors du devis.</p>
+    </details>
+    ${footerContacts ? '<p><a class="button" href="#contact">Nous contacter</a></p>' : ''}
+  </section>`
+}));
 
 await save('/catalogue-pdf/', layout({
   title: 'Catalogue Novagift 2027', description: 'Consultez ou téléchargez le catalogue général Novagift 2027 au format PDF.', path: '/catalogue-pdf/',
@@ -159,10 +272,10 @@ await save('/catalogue-pdf/', layout({
   </section>`,
 }));
 
-await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les références et quantités de votre sélection.', path: '/devis/', body: `
-  <section class="intro"><div class="wrap"><p class="eyebrow">COFFRET &amp; CIE</p><h1>Ma demande de devis</h1><p>Vérifiez les références et les quantités avant d’envoyer votre demande.</p></div></section>
+await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les produits et quantités de votre sélection.', path: '/devis/', body: `
+  <section class="intro"><div class="wrap"><p class="eyebrow">COFFRET &amp; CIE</p><h1>Ma demande de devis</h1><p>Vérifiez les produits et les quantités avant d’envoyer votre demande.</p></div></section>
   <div class="wrap quote-page" id="quote-page" data-email="${escape(quoteConfig.email)}" data-whatsapp="${escape(quoteConfig.whatsapp.replace(/^\+/, ''))}">
-    <script id="quote-price-index" type="application/json">${priceIndexJson}</script>
+    <script id="quote-product-index" type="application/json">${quoteIndexJson}</script>
     <noscript><p>Activez JavaScript pour préparer votre sélection.</p></noscript>
     <p id="quote-empty" hidden>Votre sélection est vide. <a href="/">Parcourir le catalogue</a></p>
     <section id="quote-summary" hidden aria-labelledby="quote-summary-title">
@@ -182,7 +295,7 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
         <img class="quote-logo" src="/img/novagift-logo.png" width="176" height="133" alt="Novagift">
         <div class="quote-document-party"><strong>Novagift SARL</strong><span>${escape(quoteConfig.email)}</span></div>
         <div class="quote-document-meta">
-          <dl><div><dt>Date</dt><dd id="document-date"></dd></div><div><dt>Référence</dt><dd id="document-ref"></dd></div></dl>
+          <dl><div><dt>Date</dt><dd id="document-date"></dd></div><div><dt>N° de devis</dt><dd id="document-ref"></dd></div></dl>
           <div class="quote-document-party"><strong>Destinataire</strong><span id="document-recipient"></span></div>
         </div>
         <h2 id="quote-document-title">Demande de devis</h2>
@@ -205,7 +318,7 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
     <p id="quote-status" class="quote-status" role="status"></p>
   </div>` }));
 
-for (const sheet of ['catalogue-full-v2.css', 'catalogue-full.css']) {
+for (const sheet of ['catalogue-full-v3.css', 'catalogue-full-v2.css', 'catalogue-full.css']) {
   await copyFile(new URL('style.css', root), new URL(sheet, output));
 }
 await mkdir(new URL('img/', output), { recursive: true });
@@ -220,9 +333,15 @@ const quoteScript = await readFile(new URL('devis.js', root), 'utf8');
 await writeFile(new URL('devis-prices.js', output), quoteScript
   .replace('/* minimum */ 50', String(minimumQuantity))
   .replace('/* maximum */ 1000000', String(maximumQuantity)));
-await copyFile(new URL('cards.mjs', root), new URL('cards-priced.js', output));
+for (const file of ['cards-browse.js', 'cards-priced.js']) {
+  await copyFile(new URL('cards.mjs', root), new URL(file, output));
+}
 const browserScript = await readFile(new URL('catalogue.js', root), 'utf8');
-await writeFile(new URL('catalogue-priced.js', output), browserScript
-  .replace('./cards.mjs', './cards-priced.js').replace('/* built catalog */ []', () => JSON.stringify(products)));
+const browsableProducts = products.map(({ sku, ...product }) => product);
+const browserCatalog = browserScript.replace('./cards.mjs', './cards-browse.js?v=product-names')
+  .replace('/* built catalog */ []', () => JSON.stringify(browsableProducts));
+for (const file of ['catalogue-browse.js', 'catalogue-priced.js']) {
+  await writeFile(new URL(file, output), browserCatalog);
+}
 await writeFile(new URL('robots.txt', output), 'User-agent: *\nAllow: /\n');
 console.log('Built ' + products.length + ' product pages across ' + (groups.length - 1) + ' families.');

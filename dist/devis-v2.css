@@ -14,7 +14,6 @@
 .quote-lines { list-style: none; padding: 0; margin: 0 0 1rem; border-top: 1px solid var(--line); }
 .quote-line { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) auto; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); padding-block: .9rem; }
 .quote-line-name { font-weight: 700; }
-.quote-line-ref { margin: 0; color: var(--muted); font-size: .85rem; }
 .quote-line-form label { display: grid; gap: .2rem; }
 .quote-line-value { display: grid; text-align: right; gap: .25rem; }
 .quote-secondary, .quote-remove { background: var(--bone); color: var(--olive); }

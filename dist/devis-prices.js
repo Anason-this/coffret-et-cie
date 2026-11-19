@@ -21,8 +21,8 @@
       const saved = JSON.parse(localStorage.getItem(key) || '[]');
       if (!Array.isArray(saved)) return [];
       return saved.filter(item => item && typeof item.id === 'string' &&
-        /^[a-z0-9-]+$/.test(item.id) && typeof item.name === 'string' &&
-        typeof item.sku === 'string' && validQuantity(item.quantity));
+        /^[a-z0-9-]+$/.test(item.id) && typeof item.name === 'string' && validQuantity(item.quantity))
+        .map(({ id, name, quantity }) => ({ id, name, quantity }));
     } catch {
       return [];
     }
@@ -89,7 +89,7 @@
       const index = items.findIndex(item => item.id === product.id);
       const combined = (items[index]?.quantity ?? 0) + quantity;
       if (!validQuantity(combined)) {
-        status.textContent = 'La quantité totale dépasse le maximum autorisé par référence.';
+        status.textContent = 'La quantité totale dépasse le maximum autorisé par produit.';
         return;
       }
       const line = { ...product, quantity: combined };
@@ -99,7 +99,7 @@
         save(items);
         renderTray(items);
         expandTray(true);
-        status.textContent = formatQuantity(combined) + ' pièces de cette référence dans votre devis.';
+        status.textContent = formatQuantity(combined) + ' pièces de ce produit dans votre devis.';
         document.querySelector('#open-quote').hidden = false;
       } catch {
         status.textContent = storageError;
@@ -120,16 +120,17 @@
   const create = page.querySelector('#quote-create');
   const quoteDocument = page.querySelector('#quote-document');
   const share = page.querySelector('#quote-share');
-  const currentPrices = JSON.parse(page.querySelector('#quote-price-index').textContent);
-  const readPriced = () => read().map(item => ({
-    ...item, unitPriceMinor: Object.hasOwn(currentPrices, item.sku) ? currentPrices[item.sku] : null,
-  }));
+  const currentProducts = JSON.parse(page.querySelector('#quote-product-index').textContent);
+  const readPriced = () => read().map(item => {
+    const product = Object.hasOwn(currentProducts, item.id) ? currentProducts[item.id] : null;
+    return { ...item, name: product?.name ?? item.name, unitPriceMinor: product?.unitPriceMinor ?? null };
+  });
   const selectionsKey = items => JSON.stringify(items.map(({ id, quantity, unitPriceMinor }) => [id, quantity, unitPriceMinor]));
   const contactNote = page.querySelector('#quote-contact-note');
   const email = page.querySelector('#quote-email');
   const whatsapp = page.querySelector('#quote-whatsapp');
   const lineTemplate = document.createElement('template');
-  lineTemplate.innerHTML = '<li class="quote-line"><div><a class="quote-line-name"></a><p class="quote-line-ref"></p></div>' +
+  lineTemplate.innerHTML = '<li class="quote-line"><div><a class="quote-line-name"></a></div>' +
     '<form class="quote-line-form"><label>Pièces <input name="quantity" type="number" inputmode="numeric" step="1" required></label>' +
     '<button type="submit" class="quote-secondary">Mettre à jour</button></form>' +
     '<div class="quote-line-value"><span></span><button type="button" class="quote-remove">Retirer</button></div></li>';
@@ -177,7 +178,7 @@
     for (const item of items) {
       const unit = unitPrice(item);
       const row = document.createElement('tr');
-      for (const value of [item.name + ' · ' + item.sku, formatQuantity(item.quantity),
+      for (const value of [item.name, formatQuantity(item.quantity),
         unit === null ? '—' : money(unit), unit === null ? 'Sur devis' : money(unit * item.quantity)]) {
         const cell = document.createElement('td');
         cell.textContent = value;
@@ -206,14 +207,13 @@
       if (unit === null) unknown++;
       else subtotal += unit * item.quantity;
       pieces += item.quantity;
-      details.push('• ' + item.name + ' (' + item.sku + ') — ' + formatQuantity(item.quantity) + ' pièces'
+      details.push('• ' + item.name + ' — ' + formatQuantity(item.quantity) + ' pièces'
         + (unit === null ? '' : ' × ' + money(unit) + ' = ' + cost));
 
       const row = lineTemplate.content.cloneNode(true);
       const link = row.querySelector('.quote-line-name');
       link.href = '/produits/' + item.id + '/';
       link.textContent = item.name;
-      row.querySelector('.quote-line-ref').textContent = item.sku;
       row.querySelector('.quote-line-value span').textContent = cost;
       const quantityForm = row.querySelector('form');
       quantityForm.dataset.id = item.id;
@@ -241,7 +241,7 @@
     const totalLines = ['Total : ' + formatQuantity(pieces) + ' pièces'];
     if (quoted) totalLines.push('Estimation articles TTC : ' + estimate);
     message.value = ['Bonjour Coffret & Cie,', 'Demande de devis : ' + draft.reference,
-      ...(contacts.length ? ['Destinataire : ' + contacts.join(' · ')] : []), 'Je souhaite recevoir un devis pour les références suivantes :',
+      ...(contacts.length ? ['Destinataire : ' + contacts.join(' · ')] : []), 'Je souhaite recevoir un devis pour les produits suivants :',
       '', ...details, '', ...totalLines, confirmation, '', 'Merci !'].join('\n');
     const encoded = encodeURIComponent(message.value);
     email.href = 'mailto:' + page.dataset.email + '?subject=' +
@@ -274,7 +274,7 @@
   });
   list.addEventListener('click', event => {
     const button = event.target.closest('.quote-remove');
-    if (button) apply(read().filter(item => item.id !== button.dataset.id), 'Référence retirée.');
+    if (button) apply(read().filter(item => item.id !== button.dataset.id), 'Produit retiré.');
   });
   create.addEventListener('submit', event => {
     event.preventDefault();

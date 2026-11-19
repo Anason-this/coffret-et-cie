@@ -1,4 +1,4 @@
-import { card, number, pageSize } from './cards.mjs';
+import { card, number, pageSize, productLabel } from './cards.mjs';
 
 const catalogData = /* built catalog */ [];
 const grid = document.querySelector('#grid');
@@ -14,14 +14,17 @@ if (grid) {
   const empty = document.querySelector('#empty');
   const error = document.querySelector('#load-error');
   const pagination = document.querySelector('#pagination');
-  const normalize = value => value.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  const pageJump = document.querySelector('.page-jump');
+  const shortcuts = document.querySelector('[data-type-shortcuts]');
+  const normalize = value => value.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '')
+    .replace(/(?<=\d)[ \u00a0\u202f](?=\d{3}\b)/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ');
   let filtered = [];
   let currentPage = 1;
 
   function render() {
     const start = (currentPage - 1) * pageSize;
     grid.innerHTML = filtered.slice(start, start + pageSize).map(card).join('');
-    count.textContent = number(filtered.length) + (filtered.length === 1 ? ' référence' : ' références');
+    count.textContent = number(filtered.length) + (filtered.length === 1 ? ' produit' : ' produits');
     empty.hidden = filtered.length !== 0;
     const total = Math.ceil(filtered.length / pageSize);
     pagination.hidden = total < 2;
@@ -37,13 +40,17 @@ if (grid) {
       const type = selected.get('type');
       const terms = normalize(search.elements.q.value.trim()).split(/\s+/).filter(Boolean);
       filtered = catalogData.filter(p => {
-        const searchable = normalize([p.name, p.sku, p.type, p.specification].join(' '));
+        const searchable = normalize([productLabel(p), p.type, p.specification, p.searchTerms, 'à personnaliser'].join(' '));
         return (!family || p.family === family) && terms.every(term => searchable.includes(term))
           && (!color || p.colors.includes(color)) && (!type || p.type === type)
           && (!selected.has('available') || p.stock > 0);
       });
       if (sort.value === 'stock') filtered.sort((a, b) => (b.stock ?? -1) - (a.stock ?? -1));
-      if (sort.value === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+      if (sort.value === 'name') filtered.sort((a, b) => productLabel(a).localeCompare(productLabel(b), 'fr'));
+      if (pageJump) pageJump.hidden = Boolean(terms.length || color || type || selected.has('available') || sort.value !== 'default');
+      shortcuts?.querySelectorAll('[data-type]').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.type === type));
+      });
       currentPage = 1;
       render();
     } catch (cause) {
@@ -78,5 +85,15 @@ if (grid) {
   form.addEventListener('change', refresh);
   form.addEventListener('reset', () => requestAnimationFrame(refresh));
   sort.addEventListener('change', refresh);
+  if (shortcuts) {
+    const typeSelect = form.elements.type;
+    shortcuts.addEventListener('click', event => {
+      const button = event.target.closest('button[data-type]');
+      if (!button) return;
+      typeSelect.value = typeSelect.value === button.dataset.type ? '' : button.dataset.type;
+      refresh();
+    });
+    shortcuts.hidden = false;
+  }
   if (query) refresh();
 }
