@@ -112,7 +112,7 @@ function layout({ title, description, path, body, catalogScript = false, structu
   ${catalogScript ? '<script src="/catalogue-browse.js?v=product-names" type="module"></script>' : ''}
   ${structuredData ? `<script type="application/ld+json">${JSON.stringify(structuredData).replace(/</g, '\\u003c')}</script>` : ''}</head>
   <body><a class="skip" href="#contenu">Aller au contenu</a>
-  <header><div class="mast wrap"><a class="brand" href="/"><span class="mark" aria-hidden="true">✳</span><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
+  <header><div class="mast wrap"><a class="brand" href="/"><img class="mark" src="/favicon.svg" width="44" height="44" alt=""><span>Coffret <i>&amp;</i> Cie<small>CADEAUX D’ENTREPRISE</small></span></a>
   <form class="search" action="/" role="search"><input name="q" type="search" aria-label="Rechercher dans le catalogue" placeholder="Rechercher un produit"><button>Rechercher</button></form>
   <div class="mast-actions">
     ${headerContacts ? `<div class="header-contacts" aria-label="Coordonnées">${headerContacts}</div>` : ''}

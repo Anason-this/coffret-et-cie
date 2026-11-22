@@ -32,7 +32,7 @@ header { background: var(--olive); color: var(--bone); }
 }
 .brand small { display: block; margin-top: 9px; font: 650 9px/1.2 "Segoe UI", sans-serif; letter-spacing: .21em; }
 .brand i { font-weight: normal; }
-.mark { display: grid; place-items: center; background: var(--terra); color: white; width: 44px; height: 44px; border-radius: 50%; font-size: 27px; }
+.mark { display: block; width: 44px; height: 44px; flex: none; }
 .search { display: flex; width: min(540px, 100%); }
 .search input { flex: 1; min-width: 0; color: var(--ink); background: var(--paper); border: 0; padding: .75rem .9rem; }
 .nav { display: flex; gap: clamp(16px, 3vw, 42px); overflow-x: auto; border-top: 1px solid #56604f; color: #f4eee4; }
