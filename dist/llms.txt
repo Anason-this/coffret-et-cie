@@ -1,0 +1,10 @@
+# Coffret & Cie
+
+> Catalogue marocain de cadeaux d'entreprise et d'objets publicitaires personnalisables.
+
+## Pages principales
+
+- [Catalogue](https://coffretcie.ma/): parcourir tous les produits
+- [Aide](https://coffretcie.ma/aide/): devis, quantités, personnalisation, prix et stock
+- [Catalogue PDF](https://coffretcie.ma/catalogue-pdf/): consulter le catalogue général
+- [Plan du site](https://coffretcie.ma/sitemap.xml): liste des pages publiques indexables

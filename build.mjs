@@ -5,7 +5,13 @@ import { catalogSearchTerms, catalogTypeName, describeProduct } from './product-
 
 const root = new URL('.', import.meta.url);
 const output = new URL('dist/', root);
-const origin = process.env.CATALOG_ORIGIN ?? 'https://coffret-et-cie-catalogue.sassy-leaf-4417.chatgpt.site';
+const configuredOrigin = process.env.CATALOG_ORIGIN ?? 'https://coffret-et-cie-catalogue.sassy-leaf-4417.chatgpt.site';
+const originUrl = new URL(configuredOrigin);
+if (originUrl.protocol !== 'https:' || originUrl.username || originUrl.password
+  || originUrl.search || originUrl.hash || originUrl.pathname !== '/') {
+  throw new Error('CATALOG_ORIGIN must be an HTTPS origin without a path, query, credentials, or fragment');
+}
+const origin = originUrl.origin;
 const snapshot = JSON.parse(await readFile(new URL('idelo-products.json', root), 'utf8'));
 const products = snapshot.products;
 const quoteConfig = JSON.parse(await readFile(new URL('quote-config.json', root), 'utf8'));
@@ -96,11 +102,11 @@ const siteFooter = `<footer class="site-footer"><div class="wrap footer">
     ${footerContacts ? `<section class="footer-links" id="contact" aria-labelledby="footer-contact"><h2 id="footer-contact">Nous contacter</h2>${footerContacts}</section>` : ''}
   </div></footer>`;
 
-function layout({ title, description, path, body, catalogScript = false, structuredData }) {
+function layout({ title, description, path, body, catalogScript = false, structuredData, indexable = true }) {
   return `<!doctype html><html lang="fr-MA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escape(title)} | Coffret &amp; Cie</title><meta name="description" content="${escape(description)}">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-  <meta name="robots" content="noindex, follow"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
+  <meta name="robots" content="${indexable ? 'index, follow, max-image-preview:large' : 'noindex, follow'}"><link rel="canonical" href="${escape(new URL(path, origin).href)}">
   <meta property="og:title" content="${escape(title)} | Coffret &amp; Cie"><meta property="og:description" content="${escape(description)}">
   <link rel="stylesheet" href="/catalogue-full-v3.css?v=${path === '/' ? 'compact-intro' : 'footer'}"><link rel="stylesheet" href="/devis-v2.css"><link rel="stylesheet" href="/header-contact-v2.css"><script src="/devis-prices.js?v=product-names" defer></script>
   ${catalogScript ? '<script src="/catalogue-browse.js?v=product-names" type="module"></script>' : ''}
@@ -178,10 +184,12 @@ function catalog(items, family, page, filters) {
     </section></div>` });
 }
 
-async function save(path, content) {
+const indexablePaths = new Set();
+async function save(path, content, { indexable = true } = {}) {
   const folder = new URL(path.replace(/^\//, ''), output);
   await mkdir(folder, { recursive: true });
   await writeFile(new URL('index.html', folder), content);
+  if (indexable) indexablePaths.add(path);
 }
 
 await mkdir(output, { recursive: true });
@@ -272,7 +280,7 @@ await save('/catalogue-pdf/', layout({
   </section>`,
 }));
 
-await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les produits et quantités de votre sélection.', path: '/devis/', body: `
+await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Préparez votre demande de devis Coffret & Cie et récapitulez les produits et quantités de votre sélection.', path: '/devis/', indexable: false, body: `
   <section class="intro"><div class="wrap"><p class="eyebrow">COFFRET &amp; CIE</p><h1>Ma demande de devis</h1><p>Vérifiez les produits et les quantités avant d’envoyer votre demande.</p></div></section>
   <div class="wrap quote-page" id="quote-page" data-email="${escape(quoteConfig.email)}" data-whatsapp="${escape(quoteConfig.whatsapp.replace(/^\+/, ''))}">
     <script id="quote-product-index" type="application/json">${quoteIndexJson}</script>
@@ -316,7 +324,7 @@ await save('/devis/', layout({ title: 'Ma demande de devis', description: 'Prép
       </div>
     </section>
     <p id="quote-status" class="quote-status" role="status"></p>
-  </div>` }));
+  </div>` }), { indexable: false });
 
 for (const sheet of ['catalogue-full-v3.css', 'catalogue-full-v2.css', 'catalogue-full.css']) {
   await copyFile(new URL('style.css', root), new URL(sheet, output));
@@ -343,5 +351,55 @@ const browserCatalog = browserScript.replace('./cards.mjs', './cards-browse.js?v
 for (const file of ['catalogue-browse.js', 'catalogue-priced.js']) {
   await writeFile(new URL(file, output), browserCatalog);
 }
-await writeFile(new URL('robots.txt', output), 'User-agent: *\nAllow: /\n');
-console.log('Built ' + products.length + ' product pages across ' + (groups.length - 1) + ' families.');
+const xmlEscape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
+  .replaceAll('"', '&quot;').replaceAll("'", '&apos;');
+const sitemapUrls = [...indexablePaths]
+  .map(path => new URL(path, origin).href)
+  .sort((a, b) => a.localeCompare(b, 'en'));
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map(url => `  <url><loc>${xmlEscape(url)}</loc></url>`).join('\n')}
+</urlset>
+`;
+await writeFile(new URL('sitemap.xml', output), sitemap);
+
+const contentSignal = 'Content-Signal: search=yes, ai-input=yes, ai-train=yes';
+const robots = `User-agent: *
+${contentSignal}
+Allow: /
+
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Agent
+${contentSignal}
+Allow: /
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+${contentSignal}
+Allow: /
+
+Sitemap: ${new URL('/sitemap.xml', origin).href}
+`;
+await writeFile(new URL('robots.txt', output), robots);
+
+const llms = `# Coffret & Cie
+
+> Catalogue marocain de cadeaux d'entreprise et d'objets publicitaires personnalisables.
+
+## Pages principales
+
+- [Catalogue](${new URL('/', origin).href}): parcourir tous les produits
+- [Aide](${new URL('/aide/', origin).href}): devis, quantités, personnalisation, prix et stock
+- [Catalogue PDF](${new URL('/catalogue-pdf/', origin).href}): consulter le catalogue général
+- [Plan du site](${new URL('/sitemap.xml', origin).href}): liste des pages publiques indexables
+`;
+await writeFile(new URL('llms.txt', output), llms);
+
+console.log('Built ' + products.length + ' product pages across ' + (groups.length - 1)
+  + ' families with ' + sitemapUrls.length + ' indexable URLs.');
