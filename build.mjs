@@ -207,15 +207,29 @@ for (const p of products) {
   const initialLabel = unitPriceLabel(p.unitPriceMinor);
   const path = productPath(p);
   const label = productLabel(p);
+  const productUrl = new URL(path, origin).href;
   const breadcrumbs = [['Catalogue', '/'], [featuredCollections[p.family]?.menu ?? familyNames[p.family], familyPath(p.family)], [label, path]];
+  const productStructuredData = p.unitPriceMinor === null ? null : {
+    '@type': 'Product',
+    name: label,
+    image: p.photo,
+    description: seo.copy[0],
+    category: catalogTypeName(p.type),
+    url: productUrl,
+    offers: {
+      '@type': 'Offer',
+      url: productUrl,
+      price: (p.unitPriceMinor / 100).toFixed(2),
+      priceCurrency: 'MAD',
+    },
+  };
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
       { '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map(([name, url], index) => ({
         '@type': 'ListItem', position: index + 1, name, item: new URL(url, origin).href
       })) },
-      { '@type': 'Product', name: label, image: p.photo, description: seo.copy[0],
-        category: catalogTypeName(p.type), url: new URL(path, origin).href },
+      ...(productStructuredData ? [productStructuredData] : []),
     ],
   };
   await save(path, layout({ title: label, description: seo.meta, path, structuredData, body: `

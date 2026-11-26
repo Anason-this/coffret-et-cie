@@ -26,6 +26,8 @@ const htmlFiles = files.filter(file => file.endsWith('.html'));
 assert(htmlFiles.length > 0, 'No HTML pages were generated');
 
 const pages = [];
+let productSchemaCount = 0;
+let quoteOnlyProductCount = 0;
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const relativePath = relative(outputPath, file).split(sep).join('/');
@@ -34,6 +36,37 @@ for (const file of htmlFiles) {
   const robots = html.match(/<meta name="robots" content="([^"]+)">/)?.[1];
   assert(canonical, `Missing canonical URL in ${relativePath}`);
   assert(robots, `Missing robots meta tag in ${relativePath}`);
+
+  const jsonLdBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .map(match => JSON.parse(match[1]));
+  if (path.startsWith('/produits/')) {
+    assert(jsonLdBlocks.length === 1, `Expected one JSON-LD block in ${relativePath}`);
+    const graph = jsonLdBlocks[0]['@graph'];
+    assert(Array.isArray(graph), `Product page JSON-LD must use @graph in ${relativePath}`);
+    assert(graph.some(item => item['@type'] === 'BreadcrumbList'),
+      `Missing BreadcrumbList in ${relativePath}`);
+    const product = graph.find(item => item['@type'] === 'Product');
+    const visiblePrice = html.match(/id="quote-unit-price">([^<]+)</)?.[1];
+    assert(visiblePrice, `Missing visible unit price in ${relativePath}`);
+    if (visiblePrice === 'Prix sur devis') {
+      quoteOnlyProductCount++;
+      assert(!product, `Quote-only page must not publish incomplete Product schema in ${relativePath}`);
+    } else {
+      productSchemaCount++;
+      assert(product, `Priced product is missing Product schema in ${relativePath}`);
+      assert(product.url === canonical, `Product URL does not match canonical in ${relativePath}`);
+      assert(product.offers?.['@type'] === 'Offer', `Product is missing Offer in ${relativePath}`);
+      assert(product.offers.url === canonical, `Offer URL does not match canonical in ${relativePath}`);
+      assert(product.offers.priceCurrency === 'MAD', `Offer currency must be MAD in ${relativePath}`);
+      assert(/^\d+\.\d{2}$/.test(product.offers.price) && Number(product.offers.price) > 0,
+        `Offer price is invalid in ${relativePath}`);
+      const visibleMatch = visiblePrice.match(/^([\d.\s\u00a0\u202f]+),(\d{2})/);
+      assert(visibleMatch, `Visible unit price format is invalid in ${relativePath}`);
+      const visibleNumeric = Number(visibleMatch[1].replace(/\D/g, '') + '.' + visibleMatch[2]);
+      assert(Number(product.offers.price) === visibleNumeric,
+        `Offer price does not match the visible price in ${relativePath}`);
+    }
+  }
   pages.push({ path, canonical, robots });
 }
 
@@ -77,4 +110,6 @@ assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`), 'robots.txt has the wr
 const llms = await readFile(new URL('llms.txt', output), 'utf8');
 assert(llms.includes(`${origin}/sitemap.xml`), 'llms.txt has the wrong sitemap URL');
 
-console.log(`Validated ${htmlFiles.length} HTML pages, ${sitemapUrls.length} sitemap URLs, robots.txt, and llms.txt.`);
+console.log(`Validated ${htmlFiles.length} HTML pages, ${sitemapUrls.length} sitemap URLs, `
+  + `${productSchemaCount} priced Product schemas, ${quoteOnlyProductCount} quote-only product pages, `
+  + 'robots.txt, and llms.txt.');
